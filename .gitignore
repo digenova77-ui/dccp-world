@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+.vercel/
+.tanstack/
+*.log
+.DS_Store
+agency_keys.json
+.grok/skills/*/secrets*

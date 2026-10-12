@@ -1,0 +1,753 @@
+{
+  "schema": "dualiscapax.corporate-helpers-summary/1",
+  "generated": "2026-10-03",
+  "note": "DualisCapax Corporate Helpers: mapping ways to make Fortune 500 companies BETTER, not different. Analysis/mapping only. Sealed verdicts, Trinity-reviewed (DCLM + Iris + Twain2). Persons sealed, patterns free.",
+  "sealed": 74,
+  "entries": [
+    {
+      "rank": 1,
+      "company": "Walmart",
+      "verdict": "sealed (pre-ID format)",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null
+    },
+    {
+      "rank": 2,
+      "company": "Amazon",
+      "verdict": "sealed (pre-ID format)",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null
+    },
+    {
+      "rank": 3,
+      "company": "UnitedHealth Group",
+      "verdict": "sealed (pre-ID format)",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null
+    },
+    {
+      "rank": 4,
+      "company": "Apple",
+      "verdict": "sealed (pre-ID format)",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null
+    },
+    {
+      "rank": 5,
+      "company": "CVS Health",
+      "verdict": "sealed (pre-ID format)",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null
+    },
+    {
+      "rank": 6,
+      "company": "Berkshire Hathaway",
+      "verdict": "sealed (pre-ID format)",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null
+    },
+    {
+      "rank": 7,
+      "company": "Alphabet",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ALPHABET-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 8,
+      "company": "ExxonMobil",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-EXXONMOBIL-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 9,
+      "company": "McKesson",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-MCKESSON-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 10,
+      "company": "Cencora",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CENCORA-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 11,
+      "company": "Costco",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-COSTCO-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 12,
+      "company": "Cardinal Health",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CARDINALHEALTH-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 13,
+      "company": "Cigna Group",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CIGNA-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 14,
+      "company": "Marathon Petroleum",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-MARATHONPETROLEUM-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 15,
+      "company": "Chevron",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CHEVRON-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 16,
+      "company": "JPMorgan Chase",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-JPMORGANCHASE-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 17,
+      "company": "Microsoft",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-MICROSOFT-V1",
+      "vectors": 10,
+      "total": 195.0,
+      "mean": 19.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 18,
+      "company": "Bank of America",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-BANKOFAMERICA-V1",
+      "vectors": 9,
+      "total": 189.0,
+      "mean": 21.0,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 19,
+      "company": "General Motors",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-GENERALMOTORS-V1",
+      "vectors": 10,
+      "total": 238.0,
+      "mean": 23.8,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 20,
+      "company": "Ford Motor",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-FORDMOTOR-V1",
+      "vectors": 10,
+      "total": 218.0,
+      "mean": 21.8,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 21,
+      "company": "Elevance Health",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ELEVANCEHEALTH-V1",
+      "vectors": 10,
+      "total": 197.0,
+      "mean": 19.7,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 22,
+      "company": "Citigroup",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CITIGROUP-V1",
+      "vectors": 10,
+      "total": 214.0,
+      "mean": 21.4,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 23,
+      "company": "Meta Platforms",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-METAPLATFORMS-V1",
+      "vectors": 10,
+      "total": 245.0,
+      "mean": 24.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 24,
+      "company": "Centene",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CENTENE-V1",
+      "vectors": 10,
+      "total": 205.0,
+      "mean": 20.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 25,
+      "company": "Home Depot",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-HOMEDEPOT-V1",
+      "vectors": 10,
+      "total": 187.0,
+      "mean": 18.7,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 26,
+      "company": "Fannie Mae",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-FANNIEMAE-V1",
+      "vectors": 10,
+      "total": 233.0,
+      "mean": 23.3,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 27,
+      "company": "Walgreens Boots Alliance",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-WALGREENS-V1",
+      "vectors": 10,
+      "total": 189.0,
+      "mean": 18.9,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 28,
+      "company": "Kroger",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-KROGER-V1",
+      "vectors": 10,
+      "total": 192.0,
+      "mean": 19.2,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 29,
+      "company": "Phillips 66",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PHILLIPS66-V1",
+      "vectors": 10,
+      "total": 186.0,
+      "mean": 18.6,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 30,
+      "company": "Verizon",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-VERIZON-V1",
+      "vectors": 10,
+      "total": 219.0,
+      "mean": 21.9,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 31,
+      "company": "Nvidia",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-NVIDIA-V1",
+      "vectors": 10,
+      "total": 207.0,
+      "mean": 20.7,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 32,
+      "company": "Goldman Sachs",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-GOLDMANSACHS-V1",
+      "vectors": 10,
+      "total": 229.0,
+      "mean": 22.9,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 33,
+      "company": "Wells Fargo",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-WELLSFARGO-V1",
+      "vectors": 10,
+      "total": 247.0,
+      "mean": 24.7,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 34,
+      "company": "Valero Energy",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-VALEROENERGY-V1",
+      "vectors": 10,
+      "total": 177.0,
+      "mean": 17.7,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 35,
+      "company": "Comcast",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-COMCAST-V1",
+      "vectors": 10,
+      "total": 191.0,
+      "mean": 19.1,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 36,
+      "company": "State Farm Insurance",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-STATEFARM-V1",
+      "vectors": 10,
+      "total": 219.0,
+      "mean": 21.9,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 37,
+      "company": "AT&T",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ATT-V1",
+      "vectors": 10,
+      "total": 226.0,
+      "mean": 22.6,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 38,
+      "company": "Freddie Mac",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-FREDDIEMAC-V1",
+      "vectors": 9,
+      "total": 235.0,
+      "mean": 26.11,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 39,
+      "company": "Humana",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-HUMANA-V1",
+      "vectors": 10,
+      "total": 250.0,
+      "mean": 25.0,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 40,
+      "company": "Morgan Stanley",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-MORGANSTANLEY-V1",
+      "vectors": 10,
+      "total": 264.0,
+      "mean": 26.4,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 41,
+      "company": "Target",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-TARGET-V1",
+      "vectors": 10,
+      "total": 229.0,
+      "mean": 22.9,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 42,
+      "company": "StoneX Group Inc. (SNEX)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-STONEX-V1",
+      "vectors": 10,
+      "total": 214.0,
+      "mean": 21.4,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 43,
+      "company": "Tesla Inc. (TSLA)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-TESLA-V1",
+      "vectors": 10,
+      "total": 200.0,
+      "mean": 20.0,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 44,
+      "company": "Dell Technologies Inc. (DELL)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-DELL-V1",
+      "vectors": 10,
+      "total": 226.0,
+      "mean": 22.6,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 45,
+      "company": "PepsiCo Inc. (PEP)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PEPSICO-V1",
+      "vectors": 10,
+      "total": 218.0,
+      "mean": 21.8,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 46,
+      "company": "The Walt Disney Company (DIS)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-DISNEY-V1",
+      "vectors": 10,
+      "total": 229.0,
+      "mean": 22.9,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 47,
+      "company": "United Parcel Service, Inc. (UPS)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-UPS-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 48,
+      "company": "Johnson & Johnson",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-JOHNSONJOHNSON-V1",
+      "vectors": 10,
+      "total": 191.0,
+      "mean": 19.1,
+      "revenue": "88,821M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 49,
+      "company": "FedEx Corporation (FDX)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-FEDEX-V1",
+      "vectors": 10,
+      "total": 196.0,
+      "mean": 19.6,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 50,
+      "company": "Archer Daniels Midland Company (ADM)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ADM-V1",
+      "vectors": 8,
+      "total": 164.0,
+      "mean": 20.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 51,
+      "company": "The Procter & Gamble Company (P&G)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PG-V1",
+      "vectors": 8,
+      "total": 163.0,
+      "mean": 20.38,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 52,
+      "company": "Lowe's Companies, Inc.",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-LOWES-V1",
+      "vectors": 6,
+      "total": 123.0,
+      "mean": 20.5,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 53,
+      "company": "Energy Transfer LP",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ENERGYTRANSFER-V1",
+      "vectors": 7,
+      "total": 142.0,
+      "mean": 20.29,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 54,
+      "company": "RTX Corporation",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-RTX-V1",
+      "vectors": 8,
+      "total": 173.0,
+      "mean": 21.63,
+      "revenue": "80,738M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 55,
+      "company": "Albertsons Companies, Inc. (ACI)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ALBERTSONS-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "79,237.70M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 56,
+      "company": "Sysco Corporation",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-SYSCO-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "78,844M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 57,
+      "company": "The Progressive Corporation (PGR)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PROGRESSIVE-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 58,
+      "company": "American Express Company (AXP)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-AMERICANEXPRESS-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 59,
+      "company": "Lockheed Martin Corporation (LMT)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-LOCKHEEDMARTIN-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 60,
+      "company": "MetLife, Inc. (MET)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-METLIFE-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 61,
+      "company": "HCA Healthcare, Inc. (HCA)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-HCAHEALTHCARE-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 62,
+      "company": "Prudential Financial, Inc. (PRU)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PRUDENTIALFINANCIAL-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 63,
+      "company": "The Boeing Company (BA)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CATERPILLAR-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "66,517M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 64,
+      "company": "Caterpillar Inc.",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-CATERPILLAR-V1",
+      "verdictStatus": "PASS-WITH-NOTES",
+      "vectors": 6,
+      "total": 116.0,
+      "mean": 19.33,
+      "revenue": "$64,809M"
+    },
+    {
+      "rank": 65,
+      "company": "Merck & Co., Inc. (MRK)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-MERCK-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 66,
+      "company": "The Allstate Corporation (ALL)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-ALLSTATE-V1",
+      "vectors": 6,
+      "total": 131.0,
+      "mean": 21.83,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 67,
+      "company": "Pfizer Inc. (PFE)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PFIZER-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "63,627M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 68,
+      "company": "International Business Machines Corporation (IBM)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-IBM-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "62,753M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 69,
+      "company": "New York Life Insurance Company",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-NEWYORKLIFE-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "62,639.20M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 70,
+      "company": "Delta Air Lines, Inc.",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-DELTAIRLINES-V1",
+      "vectors": null,
+      "total": null,
+      "mean": null,
+      "revenue": "61,643M",
+      "verdictStatus": null
+    },
+    {
+      "rank": 71,
+      "company": "Publix Super Markets, Inc.",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-PUBLIX-V1",
+      "vectors": 8,
+      "total": 155.0,
+      "mean": 19.375,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 72,
+      "company": "Nationwide Mutual Insurance Company",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-NATIONWIDE-V1",
+      "vectors": 9,
+      "total": 169.0,
+      "mean": 18.778,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 73,
+      "company": "TD SYNNEX Corporation (NYSE: SNX)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-TDSYNNEX-V1",
+      "vectors": 9,
+      "total": 178,
+      "mean": 19.78,
+      "revenue": null,
+      "verdictStatus": null
+    },
+    {
+      "rank": 74,
+      "company": "United Airlines Holdings, Inc. (UAL)",
+      "verdict": "ED-VERDICT-20260929-CORPHELPERS-UNITEDAIRLINES-V1",
+      "verdictStatus": null,
+      "vectors": 10,
+      "total": 194,
+      "mean": 19.4,
+      "revenue": "57,063M"
+    }
+  ],
+  "aggregate": {
+    "companiesWithScores": 53,
+    "meanOfMeans": 20.89,
+    "totalVectors": 503
+  }
+}

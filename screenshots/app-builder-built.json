@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "DCCP World",
+      "hasCanvas": true,
+      "bodyTextLen": 128,
+      "bodyTextHash": "53e4375f7e95d51b67e6173a91f9d2097960ca44ed6787cdc7b19cb5457f30cd",
+      "bodyTextPrefix": "DCCP World A night Earth you can walk down into. Japan is alread",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "DCCP World",
+      "hasCanvas": true,
+      "bodyTextLen": 128,
+      "bodyTextHash": "53e4375f7e95d51b67e6173a91f9d2097960ca44ed6787cdc7b19cb5457f30cd",
+      "bodyTextPrefix": "DCCP World A night Earth you can walk down into. Japan is alread",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,149 @@
+/* DCCP World — Block Explorer + DAG Mapper. Scoped under .ex2d; must not leak into the 3D world. */
+.ex2d{--ebg:#06090d;--epanel:#0c151cd9;--eline:#23404b;--etext:#eef6f4;--emuted:#93a8ad;--eteal:#5ef2cf;--eteal-dim:#14b8a6;--epurple:#b9a4ff;--epurple-dim:#a855f7;--eamber:#f4c96d;--ered:#ff8a88;--eshadow:0 24px 80px #0009;box-sizing:border-box;min-height:100vh;background:radial-gradient(circle at 50% -10%,#123a46 0,#06090d 52%,#030507 100%);color:var(--etext);font:14px/1.5 Inter,ui-sans-serif,system-ui,sans-serif}
+.ex2d *{box-sizing:border-box}
+.ex2d::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#8debd30a 1px,transparent 1px),linear-gradient(90deg,#8debd30a 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(to bottom,#000,transparent 82%)}
+.ex2d main{max-width:1180px;margin:auto;padding:30px 22px 72px;position:relative}
+.ex2d .top{text-align:center}
+.ex2d .kicker{color:var(--eteal);font:700 11px/1.2 ui-monospace,monospace;letter-spacing:.22em;text-transform:uppercase}
+.ex2d h1.brand{font-size:clamp(32px,6vw,68px);line-height:1;letter-spacing:-.05em;margin:14px auto 12px;max-width:900px;text-align:center}
+.ex2d .lede{color:var(--emuted);font-size:16px;max-width:760px;margin:0 auto;text-align:center}
+.ex2d .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0 6px}
+.ex2d .badge{border:1px solid #5ef2cf55;border-radius:999px;padding:8px 14px;color:var(--eteal);font:700 11px ui-monospace,monospace;white-space:nowrap}
+.ex2d .badge.purple{border-color:#b9a4ff55;color:var(--epurple)}
+.ex2d .badge.amber{border-color:#f4c96d55;color:var(--eamber)}
+.ex2d .backlink{display:inline-block;margin-top:14px;color:var(--emuted);font:12px ui-monospace,monospace;text-decoration:none;border-bottom:1px solid var(--eline)}
+.ex2d .backlink:hover{color:var(--eteal)}
+.ex2d section{margin-top:44px}
+.ex2d .sechead{text-align:center;margin-bottom:6px}
+.ex2d .sechead h2{margin:0;font-size:clamp(20px,3.4vw,30px);letter-spacing:-.02em}
+.ex2d .sechead p{color:var(--emuted);max-width:720px;margin:10px auto 0}
+.ex2d .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:20px}
+.ex2d .stat{background:linear-gradient(145deg,#10232bd9,#09131ad9);border:1px solid var(--eline);border-radius:16px;padding:16px 12px;text-align:center;box-shadow:var(--eshadow);min-width:0}
+.ex2d .stat b{display:block;font-size:clamp(22px,4vw,34px);letter-spacing:-.03em;color:var(--etext);overflow-wrap:anywhere}
+.ex2d .stat b.teal{color:var(--eteal)}
+.ex2d .stat b.purple{color:var(--epurple)}
+.ex2d .stat b.amber{color:var(--eamber)}
+.ex2d .stat b.small{font-size:clamp(16px,2.4vw,22px)}
+.ex2d .stat span{display:block;margin-top:6px;color:var(--emuted);font:700 10px ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase}
+.ex2d .panel{background:linear-gradient(145deg,#10232bd9,#09131ad9);border:1px solid var(--eline);border-radius:18px;box-shadow:var(--eshadow);padding:20px;min-width:0;position:static;display:block;width:auto;overflow:visible;backdrop-filter:none;-webkit-backdrop-filter:none}
+/* The 3D world's global `.panel` card rule (dccp/styles/main.css, max-width:640px)
+ * leaks into this route and pins every deck panel to 55vh on narrow viewports.
+ * Scope it back out — the deck's panels size to their content on all viewports.
+ * The world's own cards (outside .ex2d) are untouched. */
+.ex2d .panel{height:auto;top:auto;bottom:auto}
+.ex2d .panel h3{margin:0 0 6px;font-size:17px;letter-spacing:-.01em;text-align:center}
+.ex2d .panel .sub{color:var(--emuted);margin:0 0 16px;text-align:center}
+.ex2d .blocks{display:grid;gap:12px;margin-top:18px}
+.ex2d .block{background:#071118ee;border:1px solid var(--eline);border-radius:14px;padding:16px;min-width:0;text-align:center}
+.ex2d .block .row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;margin-bottom:10px}
+.ex2d .seq{font:800 12px ui-monospace,monospace;color:var(--eteal);border:1px solid #5ef2cf44;border-radius:8px;padding:4px 10px}
+.ex2d .kind{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:var(--epurple);border:1px solid #b9a4ff44;border-radius:8px;padding:4px 10px}
+.ex2d .event{font-weight:800;font-size:15px;overflow-wrap:anywhere}
+.ex2d .detail{color:var(--emuted);margin:8px auto 0;max-width:640px;overflow-wrap:anywhere}
+.ex2d .hashes{display:grid;gap:6px;margin-top:12px}
+.ex2d .hashline{font:11px/1.6 ui-monospace,monospace;color:#b7d9d2;overflow-wrap:anywhere;word-break:break-all}
+.ex2d .hashline b{color:var(--eteal);font-weight:700}
+.ex2d .hashline.prev b{color:var(--epurple)}
+.ex2d .meta{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+.ex2d .pill{font:700 10px ui-monospace,monospace;letter-spacing:.1em;color:var(--emuted);border:1px solid var(--eline);border-radius:999px;padding:4px 10px;overflow-wrap:anywhere}
+.ex2d .pill.label{color:var(--eamber);border-color:#f4c96d44}
+.ex2d .valid{font:800 11px ui-monospace,monospace;border-radius:8px;padding:5px 12px;letter-spacing:.1em}
+.ex2d .valid.ok{color:#06231c;background:var(--eteal)}
+.ex2d .valid.bad{color:#2b0d0d;background:var(--ered)}
+.ex2d .valid.idle{color:var(--emuted);border:1px solid var(--eline)}
+.ex2d .actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
+.ex2d button{border:1px solid #3a5b66;background:#10272f;color:var(--etext);border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer;font-size:14px}
+.ex2d button:hover{border-color:var(--eteal);transform:translateY(-1px)}
+.ex2d button.primary{background:var(--eteal);color:#06201b;border-color:var(--eteal)}
+.ex2d button:disabled{opacity:.45;cursor:default}
+.ex2d button:focus-visible{outline:2px solid var(--eteal);outline-offset:2px}
+.ex2d .slot{border:1px dashed #3a5b66;border-radius:14px;padding:22px 16px;text-align:center;color:var(--emuted);min-width:0}
+.ex2d .slot b{display:block;color:var(--eamber);font:800 12px ui-monospace,monospace;letter-spacing:.16em;margin-bottom:8px}
+.ex2d .slots{display:grid;gap:12px;margin-top:18px}
+.ex2d .verifyline{text-align:center;color:var(--emuted);margin-top:14px;font-size:13px;min-height:20px}
+.ex2d .device{margin-top:18px}
+.ex2d .keyrow{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;padding:10px;border:1px solid var(--eline);border-radius:12px;margin-top:8px;font:12px ui-monospace,monospace;overflow-wrap:anywhere}
+.ex2d .keyrow .st-active{color:var(--eteal);font-weight:800}
+.ex2d .keyrow .st-revoked{color:var(--ered);font-weight:800}
+.ex2d .empty{text-align:center;color:var(--emuted);padding:18px 8px}
+.ex2d .dagwrap{margin-top:18px;overflow-x:hidden}
+.ex2d svg.dag{display:block;width:100%;height:auto;background:#050b10ee;border:1px solid var(--eline);border-radius:16px}
+.ex2d .dag text{font-family:ui-monospace,monospace}
+.ex2d .node{cursor:pointer}
+.ex2d .node:focus-visible{outline:2px solid var(--eteal);outline-offset:4px}
+.ex2d .legend{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:14px}
+.ex2d .legend .pill{background:#071118}
+.ex2d .detail{margin-top:16px}
+.ex2d .detail dl{margin:10px auto 0;max-width:680px;text-align:left}
+.ex2d .detail dt{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:var(--eteal);text-transform:uppercase;margin-top:12px}
+.ex2d .detail dd{margin:4px 0 0;color:var(--etext);overflow-wrap:anywhere}
+.ex2d .detail dd.mut{color:var(--emuted)}
+.ex2d details.fullhash{margin-top:10px}
+.ex2d details.fullhash summary{cursor:pointer;color:var(--emuted);font:700 11px ui-monospace,monospace;letter-spacing:.08em}
+.ex2d details.fullhash summary:hover{color:var(--eteal)}
+.ex2d .foot{text-align:center;color:var(--emuted);margin-top:48px;font-size:12px;max-width:720px;margin-left:auto;margin-right:auto}
+.ex2d .tree{max-width:620px;margin:18px auto 0;text-align:left}
+.ex2d .stage{position:relative;padding:12px 12px 12px 42px;border-left:2px solid var(--eline);min-width:0}
+.ex2d .stage:last-child{border-left:2px solid transparent}
+.ex2d .stage::before{content:"";position:absolute;left:-8px;top:16px;width:14px;height:14px;border-radius:50%;background:#0c151c;border:2px solid var(--eteal-dim)}
+.ex2d .stage.lit::before{background:var(--eteal);box-shadow:0 0 14px var(--eteal);border-color:var(--eteal)}
+.ex2d .stage b{display:block;font-size:14px;letter-spacing:.03em;overflow-wrap:anywhere}
+.ex2d .stage span{color:var(--emuted);font-size:12px;overflow-wrap:anywhere}
+.ex2d .safety{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+@media (min-width:860px){
+  .ex2d .blocks{grid-template-columns:1fr 1fr}
+  .ex2d .slots{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  .ex2d button:hover{transform:none}
+  .ex2d *{transition:none!important;animation:none!important}
+}
+
+/* ---- Pyramid instrument (generative pyramid DAG) ---- */
+.ex2d .pyr-toggle{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+.ex2d .pyr-toggle button{border:1px solid var(--eline);background:#0a141b;color:var(--emuted);border-radius:999px;padding:10px 18px;font:700 12px ui-monospace,monospace;letter-spacing:.06em}
+.ex2d .pyr-toggle button.on{background:var(--eteal);border-color:var(--eteal);color:#06201b}
+.ex2d .pyr-verdict{text-align:center;color:var(--etext);max-width:720px;margin:16px auto 0;font-size:14px;overflow-wrap:anywhere}
+.ex2d .pyr-scale-note{text-align:center;color:var(--emuted);font-size:12px;max-width:720px;margin:14px auto 0;overflow-wrap:anywhere}
+.ex2d .pyr-crumbs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:14px}
+.ex2d .pyr-crumb{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--eline);background:#0a141b;border-radius:999px;padding:7px 12px;max-width:100%}
+.ex2d .pyr-crumb.on{border-color:var(--eteal)}
+.ex2d .pyr-crumb.ghost{border-style:dashed;color:var(--emuted)}
+.ex2d .pyr-crumb-t{font-size:12px;color:var(--etext);overflow-wrap:anywhere;text-align:left}
+.ex2d .pyr-kchip{font:800 9px ui-monospace,monospace;letter-spacing:.1em;border-radius:6px;padding:3px 7px;white-space:nowrap;flex:none}
+.ex2d .pyr-kchip.k-apex{background:#f3efe6;color:#0a0f14}
+.ex2d .pyr-kchip.k-corner{background:var(--epurple-dim);color:#0d0716}
+.ex2d .pyr-kchip.k-claim{background:var(--eteal-dim);color:#06231c}
+.ex2d .pyr-kchip.k-test{background:var(--epurple-dim);color:#0d0716}
+.ex2d .pyr-kchip.k-receipt{background:linear-gradient(90deg,var(--eteal-dim),var(--epurple-dim));color:#06231c}
+.ex2d .pyr-kchip.k-task{border:1px dashed var(--eteal);color:var(--eteal)}
+.ex2d .pyr-kchip.k-block{background:#123a46;color:var(--eteal)}
+.ex2d .pyr-kchip.k-hollow{border:1px dashed #3a5b66;color:var(--muted);background:transparent}
+.ex2d .pyr-focus{margin:16px auto 0;max-width:720px;border:1px solid var(--eline);border-radius:14px;padding:16px;background:#071118ee;min-width:0}
+.ex2d .pyr-focus-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;text-align:center}
+.ex2d .pyr-focus-head b{font-size:15px;overflow-wrap:anywhere}
+.ex2d .pyr-coord{text-align:center;font:700 13px ui-monospace,monospace;color:var(--eteal);margin-top:10px;overflow-wrap:anywhere}
+.ex2d .pyr-dl{margin:12px auto 0;max-width:640px;text-align:left}
+.ex2d .pyr-dl dt{font:700 10px ui-monospace,monospace;letter-spacing:.14em;color:var(--eteal);text-transform:uppercase;margin-top:10px}
+.ex2d .pyr-dl dd{margin:4px 0 0;color:var(--etext);overflow-wrap:anywhere;word-break:break-word}
+.ex2d .pyr-dl dd.mut{color:var(--muted)}
+.ex2d .pyr-emanate{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.ex2d .pyr-emanate button{font:700 12px ui-monospace,monospace}
+.ex2d .pyr-emanate .ghostbtn{background:transparent}
+.ex2d .pyr-shells{display:grid;gap:10px;margin-top:16px}
+.ex2d .pyr-shell{border:1px solid var(--eline);border-radius:12px;overflow:hidden;min-width:0;background:#07111888}
+.ex2d .pyr-shellhead{display:flex;align-items:center;gap:12px;width:100%;background:transparent;border:0;padding:12px 14px;color:var(--etext)}
+.ex2d .pyr-shellhead:hover{transform:none;border-color:var(--eline)}
+.ex2d .pyr-shellhead b{font:800 12px ui-monospace,monospace;letter-spacing:.1em;color:var(--eteal);white-space:nowrap}
+.ex2d .pyr-shellhead span{font:12px ui-monospace,monospace;color:var(--muted);overflow-wrap:anywhere}
+.ex2d .pyr-shellhead .pyr-caret{margin-left:auto;color:var(--muted)}
+.ex2d .pyr-shellhead.on b{color:var(--etext)}
+.ex2d .pyr-vlist{max-height:340px;overflow-y:auto;border-top:1px solid var(--eline);overscroll-behavior:contain}
+.ex2d .pyr-vrow{display:flex;align-items:center;gap:10px;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid #14242c;border-radius:0;padding:8px 14px;color:var(--etext)}
+.ex2d .pyr-vrow:hover{transform:none;background:#0d1a22}
+.ex2d .pyr-vrow.ishollow .pyr-vtitle{color:var(--muted);font-style:italic}
+.ex2d .pyr-vcoord{font:11px ui-monospace,monospace;color:var(--emuted);white-space:nowrap;flex:none}
+.ex2d .pyr-vtitle{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+@media (min-width:860px){
+  .ex2d .pyr-shells{grid-template-columns:1fr 1fr}
+}
