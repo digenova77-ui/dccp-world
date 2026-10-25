@@ -1,0 +1,12 @@
+{
+  "protocol": "dccp.figures.v1",
+  "note": "Raw values. The world formats these in the visitor locale at render time. Large values are expressed in billions.",
+  "figures": [
+    { "id": "residual-capacity", "label": "Residual capacity", "value": 1270000000 },
+    { "id": "edge-events", "label": "Edge events observed", "value": 840000000 },
+    { "id": "research-records", "label": "Research records", "value": 2100000000 },
+    { "id": "dclm-decisions", "label": "DCLM decisions", "value": 560000000 },
+    { "id": "unity-seats", "label": "Unity seats", "value": 12000000 },
+    { "id": "efuse-held", "label": "eFuse held", "value": 0 }
+  ]
+}

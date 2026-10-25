@@ -1,31 +1,18 @@
 # DCCP World
 
-The Unity/HUD world application — the interactive 3D world build for the
-DualisCapax project.
+Third depth. Entered only from the HUD handoff. Contains no website.
 
-## Architecture
+## Open
+The world stays shut unless `sessionStorage` holds an accepted `DCCP/2` handoff from `hud`.
+`tools/handoff-harness.html` writes that record for a verifier. It is not the world.
 
-This is a **3D (layered) architecture**, not a flat codebase:
+## Files
+See `MANIFEST.md`, `STATE.md`, `TOKENS.md`, and `PERFORMANCE.md`.
 
-- **Domain modules** under `src/dccp/`: `world`, `cosmos`, `explorer`,
-  `pipe`, `rte`, `unity`, `engine`, `meter`, `live`, `ui`, `data`, `index`
-- **Cross-cutting concerns** spanning all modules:
-  - `trinity` — DCLM / Iris / Twain² verdict discipline
-  - `truth` — evidence grading (`PROVEN` / `REPORTED` / `INFERRED` / `UNKNOWN`)
-  - `ledger` — hash-chained records
-  - `iris` — containment gates
+## Frozen
+`purity_status.ts` is not revised. Boundary remains `NOT_FOR_EMISSION`.
 
-Patterns repeated across layers (the Trinity review shape, the evidence
-labels) are the architecture, not duplication. See `AGENTS.md` and the
-`*_DESIGN.md` docs at the repo root for sealed design decisions.
-
-## Develop
-
+## Test
 ```sh
-npm run dev      # serve on 0.0.0.0:8080
-npm test         # full test suite
-npm run typecheck
-npm run build
+node --test tests/world.test.mjs
 ```
-
-See `AGENTS.md` for the full builder contract.
