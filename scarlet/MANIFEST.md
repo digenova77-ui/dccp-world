@@ -9,7 +9,7 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 760 | `e6b7fed54787c9e0fcfb178e151643c45d49daf8b0da0d0078f1924ae1731751` | `TOKEN-REPORT.md` |
 | 76 | `62dea7bb1344fbbdca7057eea06791c27b1488f25203d25bcfd8035c44280151` | `app/.grok/app-env.json` |
 | 277203 | `c2b4583c7d804bdaf94049f5b9248d2782116b1d3e19009e6d0e0ddeb741afa9` | `app/package-lock.json` |
-| 3450 | `f47a3c564906baeda25e9d560b16339b55f80a1506bd8608046c66e15c25010a` | `app/package.json` |
+| 3434 | `d3475713d5a0a5e7bfbecd69d9256451e1c2107f85fcc30f64fed6ac5ff4c0c8` | `app/package.json` |
 | 136 | `e4c403bf60186592ccfd3db8b1886a0d22a441d1f0dc4e78b9c9f98642e0e3e2` | `app/public/__grok/manifest.webmanifest` |
 | 255 | `0dc30d397204e60211e25e243d6fcb831b490b6d61c04075ac1ac9f83266a566` | `app/public/capability.json` |
 | 297 | `822b1287c5cc6b6169a161f634bcd541f1a4b267d0cac038b06605d144a13a0d` | `app/public/favicon.svg` |
@@ -54,7 +54,7 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 1004 | `6900b5cc81fb00e1fd2681549d6b89c990ab335b2c2191fdaeeadbe963c56580` | `app/src/routes/api/v2/ledger.ts` |
 | 708 | `242653041231ed72679729ec9172586f5d26b4adb5a0039fbf6b016d5d5525e2` | `app/src/routes/api/v2/protocol.ts` |
 | 176 | `f36b0fa89ed515e54406b7697cc82c94838ff800ed3ba8785d29d5cc04fc7532` | `app/src/routes/health.ts` |
-| 6863 | `a54c68628b400711d5632e20d92dabba65ac80cdedda99c17bf94ac5fb650081` | `app/src/routes/index.tsx` |
+| 6870 | `d5724278e2e1249560d1691a024f314f0a8b8e4ee092f7ea2d15fb90a19a0d6d` | `app/src/routes/index.tsx` |
 | 222 | `cea9eb5dc9b358d1359fc052188b704d5750a8fa772b47c007af3cc6df8215d6` | `app/src/routes/log.ts` |
 | 5920 | `2c4258a088543ec7a32350e56719b8e2d1f8123d68a1b90ae89c3ddb9f1fd648` | `app/src/styles.css` |
 | 753 | `17fa006ffb6aa67144e2801b0a262eef2a2ed30c0803548081bb38231f261477` | `app/tsconfig.json` |
@@ -68,5 +68,25 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 340895 | `ac02eb7d026c6b1c2169e0c59283d52574335d6ddc958d25ead986f10fa88cc9` | `hosted/index-BZqyS948.js` |
 | 7953 | `76ee14a045bba0b549e4c4ede18ad0078010af437281bcb1b650d94a4d1db756` | `hosted/routes-AkICurYE.js` |
 | 4466 | `f8011b6ddba03bbe89c7dfa8bc8e31757ba247227dc35b08e5b1c45c5cda0dbe` | `hosted/styles-CN44gXjP.css` |
+| 764 | `fe022a85cdc647ae372bab6249b6dc103f177669bcca613d806ff366b7f21910` | `app/shell.html` |
+| 1267 | `a52f1250f7c15f73a2127e39dac4f0c86578c565a16a541a0a38a1509205c932` | `app/src/shell.tsx` |
+| 1848 | `202e32e75291520d9b695e2e1b72c51a01a99c99a01cc58fb4a8aeeb1961c2be` | `app/vite.shell.config.ts` |
+| 136 | `e4c403bf60186592ccfd3db8b1886a0d22a441d1f0dc4e78b9c9f98642e0e3e2` | `shell/__grok/manifest.webmanifest` |
+| 255 | `0dc30d397204e60211e25e243d6fcb831b490b6d61c04075ac1ac9f83266a566` | `shell/capability.json` |
+| 297 | `822b1287c5cc6b6169a161f634bcd541f1a4b267d0cac038b06605d144a13a0d` | `shell/favicon.svg` |
+| 853461 | `ebdeaac385ef66cf8ed0a5f41ee13513ade06301c674c7a765c62aa6cc021a7b` | `shell/index.html` |
+| 205 | `1bbe5d4af3917f502ff71d944adea0f68f3ce965e403374f13b79ec96ff11b78` | `shell/llms.txt` |
+| 2438 | `60355858302b145c23e5fcac1f3a44063ab8d7da90ce3ff45e56fd1c137e4cc5` | `shell/observe.html` |
+| 1236 | `b4539abd265c92dab8762ed7d8518bbb2fa6a9f7930d77906473e6804d0e03bf` | `shell/registry/canada.json` |
+| 29277 | `41ee3797d33f06d999b362d2afb1051eb2baf29c0fdb59bc7750e2055427175f` | `shell/registry/chambers.json` |
+| 160641 | `366ceb2ce4b836b4136a6d8ae9e525fcd6f331972f7cac322447d5c3619f7323` | `shell/registry/cities.json` |
+| 375362 | `daaa055989e133953a23d5cc2dc466e0444f120217d63cbfc0a64e54e99e4ccb` | `shell/registry/countries.json` |
+| 1401 | `da8b7b7cd775eab98c9d2e0742cc2b15bfb1795f05845e26b81b70bc87ca4f91` | `shell/registry/doctrine.json` |
+| 12857 | `a837cd98dbf1a969f913723a5a7fa1f5aba9499d757545b0b0cc352110cf375a` | `shell/registry/jurisdictions.json` |
+| 1037 | `16b380cd565303fa0e48419e7382ce90a302ecfe496aa159e435e59ee39cff87` | `shell/registry/pharmacology.json` |
+| 4627 | `dd1865d52f24252a949c70759d9d691bf615d9a8c97f8d4db94c69d69956b419` | `shell/registry/rtes.json` |
+| 14536 | `d5d0bbdf278987525f060371cffd085d500acad599c463eebc303f255b7761f4` | `shell/registry/sectors.json` |
+| 43808 | `4197974434ae573f0ae69e5ee9f1cb7a3a59174e8895ae04951a378e6194cf0b` | `shell/registry/trinity-verdict.json` |
+| 1981 | `cf7d42a8fed4da1823011ec72174891af790b236007cce3fa2ca6f9d2a34b813` | `shell/where.html` |
 
-Count: 64. Bytes: 2303313.
+Count: 84. Bytes: 3810738.

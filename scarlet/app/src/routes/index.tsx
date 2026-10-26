@@ -17,7 +17,7 @@ function presentedLine(): string | null {
   }
 }
 
-function Front() {
+export function Front() {
   const [row, setRow] = useState<Handoff>({ ok: false, reason: 'SHUT' })
   useEffect(() => {
     setRow(readHandoff(presentedLine()))
