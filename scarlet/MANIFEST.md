@@ -9,7 +9,7 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 760 | `e6b7fed54787c9e0fcfb178e151643c45d49daf8b0da0d0078f1924ae1731751` | `TOKEN-REPORT.md` |
 | 76 | `62dea7bb1344fbbdca7057eea06791c27b1488f25203d25bcfd8035c44280151` | `app/.grok/app-env.json` |
 | 277203 | `c2b4583c7d804bdaf94049f5b9248d2782116b1d3e19009e6d0e0ddeb741afa9` | `app/package-lock.json` |
-| 3434 | `d3475713d5a0a5e7bfbecd69d9256451e1c2107f85fcc30f64fed6ac5ff4c0c8` | `app/package.json` |
+| 3513 | `0037e5eaec95a6e9a7d3f58afe4f05ce3616be715ee0436a6abb4a91e4402486` | `app/package.json` |
 | 136 | `e4c403bf60186592ccfd3db8b1886a0d22a441d1f0dc4e78b9c9f98642e0e3e2` | `app/public/__grok/manifest.webmanifest` |
 | 255 | `0dc30d397204e60211e25e243d6fcb831b490b6d61c04075ac1ac9f83266a566` | `app/public/capability.json` |
 | 297 | `822b1287c5cc6b6169a161f634bcd541f1a4b267d0cac038b06605d144a13a0d` | `app/public/favicon.svg` |
@@ -89,4 +89,4 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 43808 | `4197974434ae573f0ae69e5ee9f1cb7a3a59174e8895ae04951a378e6194cf0b` | `shell/registry/trinity-verdict.json` |
 | 1981 | `cf7d42a8fed4da1823011ec72174891af790b236007cce3fa2ca6f9d2a34b813` | `shell/where.html` |
 
-Count: 84. Bytes: 3810738.
+Count: 84. Bytes: 3810817.
