@@ -1,0 +1,7 @@
+{
+  "name": "dualiscapax",
+  "display": "standalone",
+  "background_color": "#07080c",
+  "theme_color": "#07080c",
+  "start_url": "."
+}
