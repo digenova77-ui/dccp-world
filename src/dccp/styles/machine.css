@@ -1,0 +1,79 @@
+/* DCLM Machine Interface — 2D console. Scoped under .m2d; must not leak into the 3D world. */
+.m2d{--mbg:#071016;--mpanel:#0d1a22e8;--mline:#23404b;--mtext:#e9f4f2;--mmuted:#8ea7ad;--mmint:#72f3d0;--mamber:#f4c96d;--mviolet:#b9a4ff;--mred:#ff8a88;--mshadow:0 24px 80px #0009;box-sizing:border-box;min-height:100vh;background:radial-gradient(circle at 70% -20%,#164f5c 0,#071016 46%,#04090d 100%);color:var(--mtext);font:14px/1.5 Inter,ui-sans-serif,system-ui,sans-serif}
+.m2d *{box-sizing:border-box}
+.m2d::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:linear-gradient(#8debd30b 1px,transparent 1px),linear-gradient(90deg,#8debd30b 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 80%)}
+.m2d main{max-width:1240px;margin:auto;padding:30px 22px 64px;position:relative}
+.m2d .top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+.m2d .kicker{color:var(--mmint);font:700 11px/1.2 ui-monospace,monospace;letter-spacing:.18em;text-transform:uppercase}
+.m2d .brand{font-size:clamp(34px,6vw,76px);line-height:.94;letter-spacing:-.07em;margin:14px 0 16px;max-width:800px;color:var(--mtext)}
+.m2d .lede{color:var(--mmuted);font-size:16px;max-width:760px;margin:0}
+.m2d .badge{border:1px solid #72f3d044;border-radius:999px;padding:8px 12px;color:var(--mmint);font:700 11px ui-monospace,monospace;white-space:nowrap}
+.m2d .backlink{display:inline-block;margin-top:12px;color:var(--mmuted);font:12px ui-monospace,monospace;text-decoration:none;border-bottom:1px solid var(--mline)}
+.m2d .backlink:hover{color:var(--mmint)}
+.m2d .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:32px}
+.m2d .panel{background:linear-gradient(145deg,#10232bd9,#09131ad9);border:1px solid var(--mline);border-radius:18px;box-shadow:var(--mshadow);padding:20px;min-width:0;position:static;display:block;width:auto;overflow:visible}
+.m2d .panel h2{margin:0 0 8px;font-size:18px;letter-spacing:-.02em;color:var(--mtext)}
+.m2d .sub{color:var(--mmuted);margin:0 0 18px}
+.m2d .pipe{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.m2d .pipe label{display:block;color:var(--mmuted);font:700 10px ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;min-width:0}
+.m2d .pipe textarea{display:block;width:100%;height:150px;margin-top:8px;border:1px solid #31505a;background:#061016;color:var(--mtext);border-radius:12px;padding:12px;resize:vertical;font:13px/1.5 ui-monospace,monospace}
+.m2d .actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:14px}
+.m2d button{border:1px solid #3a5b66;background:#10272f;color:var(--mtext);border-radius:10px;padding:10px 13px;font-weight:700;cursor:pointer;font-size:13px}
+.m2d button:hover{border-color:var(--mmint);transform:translateY(-1px)}
+.m2d button.primary{background:var(--mmint);color:#06201b;border-color:var(--mmint)}
+.m2d button.danger{color:var(--mred);border-color:#ff8a8844}
+.m2d button:disabled{opacity:.45;cursor:default}
+.m2d .receipt,.m2d .code{margin-top:18px;background:#050c10;border:1px solid #21434b;border-radius:12px;padding:14px;min-height:110px;font:12px/1.55 ui-monospace,monospace;white-space:pre-wrap;overflow:auto;color:var(--mtext);overflow-wrap:anywhere}
+.m2d .code{min-height:0;max-height:260px;margin-top:10px;color:#b7f9e7}
+.m2d .status{color:var(--mamber);font-weight:800}
+.m2d .status.see{color:var(--mmint)}
+.m2d .status.hole{color:var(--mred)}
+.m2d .status.wait{color:var(--mamber)}
+.m2d .connection{display:flex;justify-content:space-between;gap:10px;align-items:center;margin:10px 0 18px;padding:12px;border:1px solid #31505a;border-radius:12px;background:#07131a}
+.m2d .connection input{min-width:0;flex:1;background:transparent;color:var(--mtext);border:0;outline:0;font:12px ui-monospace,monospace}
+.m2d .dot{width:9px;height:9px;background:var(--mamber);border-radius:50%;box-shadow:0 0 16px var(--mamber);flex:none}
+.m2d .dot.live{background:var(--mmint);box-shadow:0 0 16px var(--mmint)}
+.m2d .dot.hole{background:var(--mred);box-shadow:0 0 16px var(--mred)}
+.m2d .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.m2d .fact{padding:13px;border:1px solid var(--mline);border-radius:12px;min-width:0}
+.m2d .fact b{display:block;color:var(--mmint);font:700 10px ui-monospace,monospace;letter-spacing:.12em;margin-bottom:5px}
+.m2d .fact span{color:var(--mmuted)}
+.m2d .law{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.m2d .law span{border:1px solid #6c5c9766;color:var(--mviolet);border-radius:999px;padding:5px 8px;font:11px ui-monospace,monospace}
+.m2d .flow{display:flex;align-items:center;gap:8px;margin:18px 0}
+.m2d .node{flex:1;min-width:0;border:1px solid #31505a;border-radius:12px;padding:14px;background:#0b1b23}
+.m2d .node b{display:block;font-size:12px;color:var(--mtext)}
+.m2d .node span{color:var(--mmuted);font-size:12px}
+.m2d .arrow{color:var(--mmint);font-size:20px;flex:none}
+.m2d .footer{margin-top:22px;color:var(--mmuted);font:11px ui-monospace,monospace}
+.m2d .danger{color:var(--mred)}
+.m2d .split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.m2d .table{width:100%;border-collapse:collapse;font:12px ui-monospace,monospace;color:var(--mtext)}
+.m2d .table td,.m2d .table th{padding:9px 0;border-bottom:1px solid var(--mline);text-align:left;vertical-align:top}
+.m2d .table th{color:var(--mmint);font-size:10px;letter-spacing:.1em}
+.m2d .table td:last-child{color:var(--mmuted);text-align:right}
+.m2d .table code{color:var(--mmint)}
+.m2d .keyrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--mline);font:12px ui-monospace,monospace}
+.m2d .keyrow small{display:block;color:var(--mmuted);margin-top:3px}
+.m2d .keyrow b{color:var(--mtext)}
+/* Father bind additions (WS5): endpoint field grid + pinned-key input. Additive only. */
+.m2d .epfields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0 8px}
+.m2d .epfields label{display:block;color:var(--mmuted);font:700 10px ui-monospace,monospace;letter-spacing:.12em;min-width:0}
+.m2d .epfields input,.m2d .epfields select{display:block;width:100%;margin-top:6px;border:1px solid #31505a;background:#061016;color:var(--mtext);border-radius:10px;padding:9px 10px;font:12px ui-monospace,monospace;min-width:0}
+.m2d .epfields input:focus,.m2d .epfields select:focus{outline:1px solid var(--mmint)}
+.m2d textarea.keyinput{display:block;width:100%;margin-top:10px;border:1px solid #31505a;background:#061016;color:var(--mtext);border-radius:12px;padding:12px;resize:vertical;font:12px/1.5 ui-monospace,monospace;overflow-wrap:anywhere}
+@media(max-width:520px){.m2d .epfields{grid-template-columns:1fr 1fr}}
+.m2d .notice{border-left:3px solid var(--mamber);padding:10px 12px;background:#f4c96d0d;color:var(--mmuted);font-size:12px;margin-top:12px}
+@media(max-width:850px){.m2d .grid,.m2d .split{grid-template-columns:1fr}.m2d .top{display:block}.m2d .badge{display:inline-block;margin-top:14px}.m2d .pipe{grid-template-columns:1fr}.m2d .brand{font-size:52px}}
+@media(max-width:520px){.m2d main{padding:22px 14px 48px}.m2d .flow{flex-direction:column;align-items:stretch}.m2d .arrow{text-align:center;transform:rotate(90deg)}.m2d .connection{align-items:stretch;flex-wrap:wrap}.m2d .connection input{flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){.m2d button:hover{transform:none}}
+/* Fusion Confirmation (read-only connection status). Additive only. */
+.m2d .fusion-panel{border-color:#2f6b5f}
+.m2d .fusion-panel h2 .status{font-size:.82em;letter-spacing:.04em}
+.m2d .fusion-sealed{border-color:#2f6b5f;background:#06231c}
+.m2d .fusion-sealed .status.see{text-shadow:0 0 18px #3ddc9788}
+.m2d .fusion-panel .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:12px 0 4px}
+.m2d .fusion-panel .fact b{display:block;font:700 10px ui-monospace,monospace;letter-spacing:.12em;color:var(--mmuted);margin-bottom:4px}
+.m2d .fusion-panel .fact span{font:12px/1.5 ui-monospace,monospace;color:var(--mtext);overflow-wrap:anywhere}
+@media(max-width:850px){.m2d .fusion-panel .facts{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.m2d .fusion-sealed .status.see{text-shadow:none}}

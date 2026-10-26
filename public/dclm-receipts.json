@@ -1,0 +1,277 @@
+{
+ "schema": "dccpworld.dclm-receipts/1",
+ "createdAt": "2026-10-03T08:47:20Z",
+ "kernelEndpoint": "https://dualiscapax.ai/api/v2/compute",
+ "kernelProvenance": {
+  "source": "GET /api/v2/provenance (kernel-published, not part of the compute receipt)",
+  "artifactSha256": "ad67077c18931b9def09316291ee7a1bb4cda933d52964877d14756e0db52eb8",
+  "backend": null
+ },
+ "rule": "LOCKSTEP = two submissions of the same content-addressed payload, both accepted, identical inputDigest",
+ "labels": {
+  "clientSha256": "client-computed SHA-256 of the exact module bytes",
+  "receipts": "fields returned by DCLM API v2 compute"
+ },
+ "modules": [
+  {
+   "module": "canada",
+   "file": "registry/canada.json",
+   "bytes": 1236,
+   "clientSha256": "b4539abd265c92dab8762ed7d8518bbb2fa6a9f7930d77906473e6804d0e03bf",
+   "payload": "dccpworld|module|canada|b4539abd265c92dab8762ed7d8518bbb2fa6a9f7930d77906473e6804d0e03bf",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 327,
+     "inputDigest": "f84d3407ee73d531b8f02e90d383066ba3b27c2bbcec112b6b082019a8008b95",
+     "stateDigest": "d720a9141a08f3b3185e2617e00dd97c0cfb1e92e43a0aa2ccb050df560365af",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 328,
+     "inputDigest": "f84d3407ee73d531b8f02e90d383066ba3b27c2bbcec112b6b082019a8008b95",
+     "stateDigest": "169dd623233e05f5b4baa042d9fd6a4c27944c039b65e96ea54bf732634a36c7",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "chambers",
+   "file": "registry/chambers.json",
+   "bytes": 29302,
+   "clientSha256": "0e35626e964f4c6556b662635bdc4b62ced4b4c186764b1e8fabf461f94c9c18",
+   "payload": "dccpworld|module|chambers|0e35626e964f4c6556b662635bdc4b62ced4b4c186764b1e8fabf461f94c9c18",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 329,
+     "inputDigest": "2a5ae310b7b8ca49b9938ad9831994708a13a31b247df54b124bb990eb66690a",
+     "stateDigest": "5faf6357fa47482a5093e85c9483e2544626727781ac81d234cc8b73f3d54844",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 330,
+     "inputDigest": "2a5ae310b7b8ca49b9938ad9831994708a13a31b247df54b124bb990eb66690a",
+     "stateDigest": "bc62dc8741d190df572711147f1428f1422f6dca2f8f6606948cf10c1cf8713d",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "cities",
+   "file": "registry/cities.json",
+   "bytes": 160641,
+   "clientSha256": "366ceb2ce4b836b4136a6d8ae9e525fcd6f331972f7cac322447d5c3619f7323",
+   "payload": "dccpworld|module|cities|366ceb2ce4b836b4136a6d8ae9e525fcd6f331972f7cac322447d5c3619f7323",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 331,
+     "inputDigest": "8e4d839fc99bdc1cb1a68389b6b2c5fff44336232b9c843532f20a718a12412d",
+     "stateDigest": "c9fd474098c7aa7e41ccbd16a218f4b13ce8435c2f2d7cfb2331e1313ee3eda4",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 332,
+     "inputDigest": "8e4d839fc99bdc1cb1a68389b6b2c5fff44336232b9c843532f20a718a12412d",
+     "stateDigest": "9c83bd4f583b742e44c5456502b553e99a7276b71e0f1c6c1da87b4f97d26d0f",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "countries",
+   "file": "registry/countries.json",
+   "bytes": 375362,
+   "clientSha256": "daaa055989e133953a23d5cc2dc466e0444f120217d63cbfc0a64e54e99e4ccb",
+   "payload": "dccpworld|module|countries|daaa055989e133953a23d5cc2dc466e0444f120217d63cbfc0a64e54e99e4ccb",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 333,
+     "inputDigest": "a43fd103de85c003a2156f57fdca7ff4e1f5008cff5d51143c970bee059f90d6",
+     "stateDigest": "4f9eff6e0fff647e87ba0f174687cc1cafddb4d42d2dfd104b387b210d953c26",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 334,
+     "inputDigest": "a43fd103de85c003a2156f57fdca7ff4e1f5008cff5d51143c970bee059f90d6",
+     "stateDigest": "bd79f7569d4e8e4f4a8f013803c055ea2d063e9c552241a155f7e7a63181c233",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "doctrine",
+   "file": "registry/doctrine.json",
+   "bytes": 1401,
+   "clientSha256": "da8b7b7cd775eab98c9d2e0742cc2b15bfb1795f05845e26b81b70bc87ca4f91",
+   "payload": "dccpworld|module|doctrine|da8b7b7cd775eab98c9d2e0742cc2b15bfb1795f05845e26b81b70bc87ca4f91",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 335,
+     "inputDigest": "d77ef4ea7bb72c71b374967e1d0e2c617efec5964122acbd1ace57efd5259631",
+     "stateDigest": "ac28cf77af8d5a35c041295d800476c0477c1cbaf28e90e1c0d396bfa8a119aa",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 336,
+     "inputDigest": "d77ef4ea7bb72c71b374967e1d0e2c617efec5964122acbd1ace57efd5259631",
+     "stateDigest": "52bf65d69ca40fa9495b1dbb1d74b5d9ff954ddcd52608cbfbdfe1aad0fd2fcb",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "jurisdictions",
+   "file": "registry/jurisdictions.json",
+   "bytes": 12857,
+   "clientSha256": "a837cd98dbf1a969f913723a5a7fa1f5aba9499d757545b0b0cc352110cf375a",
+   "payload": "dccpworld|module|jurisdictions|a837cd98dbf1a969f913723a5a7fa1f5aba9499d757545b0b0cc352110cf375a",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 337,
+     "inputDigest": "b3671046491d84c66fae902d2f360e41a90ef776a182ec2d4b74b2d588ec329f",
+     "stateDigest": "52438695bbe7030638834ca89d713427bd24717f0034bc79fa8dd3831133ff9d",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 338,
+     "inputDigest": "b3671046491d84c66fae902d2f360e41a90ef776a182ec2d4b74b2d588ec329f",
+     "stateDigest": "1b978e60c737a27770230191842d6733101085d5ea7d4d5bea21e3a9997b6cfc",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "pharmacology",
+   "file": "registry/pharmacology.json",
+   "bytes": 1037,
+   "clientSha256": "16b380cd565303fa0e48419e7382ce90a302ecfe496aa159e435e59ee39cff87",
+   "payload": "dccpworld|module|pharmacology|16b380cd565303fa0e48419e7382ce90a302ecfe496aa159e435e59ee39cff87",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 339,
+     "inputDigest": "d21ac21fe79b1f809c0fa02a562ce3f6ac880dcee94ccc07901419e17bbe4850",
+     "stateDigest": "9121d688abcb69220b5bd1a35fdc37a6a8c36e909e79a56881dbe6265a551e7e",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 340,
+     "inputDigest": "d21ac21fe79b1f809c0fa02a562ce3f6ac880dcee94ccc07901419e17bbe4850",
+     "stateDigest": "2c7f82f0f5fbcb0e0b9e413ed12358b3dcaf610ff876aa5ba95debac02079682",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "rtes",
+   "file": "registry/rtes.json",
+   "bytes": 4627,
+   "clientSha256": "dd1865d52f24252a949c70759d9d691bf615d9a8c97f8d4db94c69d69956b419",
+   "payload": "dccpworld|module|rtes|dd1865d52f24252a949c70759d9d691bf615d9a8c97f8d4db94c69d69956b419",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 341,
+     "inputDigest": "92c4042c8cf36160c56e4a005c75a9ec6aee5c643e88f39869624cb37579a061",
+     "stateDigest": "d37eb1f00e5b74e5435743bf9aec5dd21ab892b3f44a898e2b9a04dc7b92abae",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 342,
+     "inputDigest": "92c4042c8cf36160c56e4a005c75a9ec6aee5c643e88f39869624cb37579a061",
+     "stateDigest": "8bbb566b2abcde69d8252dc89d898d8760f2cfb543ad4b51fbefc437c6a3bb43",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "sectors",
+   "file": "registry/sectors.json",
+   "bytes": 14536,
+   "clientSha256": "d5d0bbdf278987525f060371cffd085d500acad599c463eebc303f255b7761f4",
+   "payload": "dccpworld|module|sectors|d5d0bbdf278987525f060371cffd085d500acad599c463eebc303f255b7761f4",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 343,
+     "inputDigest": "fe51345cf34ae4578b67b49776453890bcf637a91f317989f0b3870aa25115c8",
+     "stateDigest": "1be404ea09e2af79ef30185f5e4aaf50054361ba0e4bf62ee844efcd66639101",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 344,
+     "inputDigest": "fe51345cf34ae4578b67b49776453890bcf637a91f317989f0b3870aa25115c8",
+     "stateDigest": "e71868a6b6f98a454a002dedeb87d8e5f29270a65bf6cb65859cbeb0dff77b76",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  },
+  {
+   "module": "trinity-verdict",
+   "file": "registry/trinity-verdict.json",
+   "bytes": 43808,
+   "clientSha256": "4197974434ae573f0ae69e5ee9f1cb7a3a59174e8895ae04951a378e6194cf0b",
+   "payload": "dccpworld|module|trinity-verdict|4197974434ae573f0ae69e5ee9f1cb7a3a59174e8895ae04951a378e6194cf0b",
+   "receipts": [
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 345,
+     "inputDigest": "73448eb6af647613a1f77d6212afb5002481d667b614bd74882c711bd050c5b2",
+     "stateDigest": "a6156e0aa1c7404c5a2103a1088d43220d4829fd3681429a9adc29641744fbb6",
+     "protocolVersion": 2
+    },
+    {
+     "accepted": true,
+     "reason": 0,
+     "sequence": 346,
+     "inputDigest": "73448eb6af647613a1f77d6212afb5002481d667b614bd74882c711bd050c5b2",
+     "stateDigest": "4524335b828c1d7e5f8a3f882fba17c7319c5a1a3cd01c43a4d2addcda0bf301",
+     "protocolVersion": 2
+    }
+   ],
+   "lockstep": true
+  }
+ ]
+}

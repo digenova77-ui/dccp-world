@@ -1,0 +1,1715 @@
+{
+ "canada": [
+  {
+   "guard": "Canada Health Infoway CA Core · CIHI reporting",
+   "key": "ca",
+   "lat": 56.1,
+   "lon": -106.3,
+   "name": "All Canada",
+   "systems": "National aggregate"
+  },
+  {
+   "guard": "PHIPA · Bill 119 · ConnectingOntario rules",
+   "key": "on",
+   "lat": 50.0,
+   "lon": -85.0,
+   "name": "Ontario",
+   "systems": "Meditech Expanse, Epic, Oracle Health (Cerner); ConnectingOntario, OLIS; 50+ Ontario Health Teams, Quinte Health, UHN"
+  },
+  {
+   "guard": "Health Information Act (HIA)",
+   "key": "ab",
+   "lat": 53.9,
+   "lon": -116.6,
+   "name": "Alberta",
+   "systems": "Connect Care (Epic, province-wide); Alberta Netcare, PIN; AHS"
+  },
+  {
+   "guard": "FIPPA · E-Health Act",
+   "key": "bc",
+   "lat": 53.7,
+   "lon": -127.6,
+   "name": "British Columbia",
+   "systems": "CST Cerner Millennium, Meditech Expanse; CareConnect, PLIS; VCH, Fraser, PHSA, Island, Interior"
+  },
+  {
+   "guard": "Law 25 (former Bill 64)",
+   "key": "qc",
+   "lat": 52.9,
+   "lon": -73.5,
+   "name": "Quebec",
+   "systems": "CIUSSS/CISSS; DSQ modernization"
+  },
+  {
+   "guard": "Provincial health-information acts",
+   "key": "atl",
+   "lat": 46.5,
+   "lon": -63.0,
+   "name": "Atlantic Canada",
+   "systems": "Nova Scotia OPOR (Epic), Horizon/Vitalité NB, IWK"
+  },
+  {
+   "guard": "Provincial health-information acts",
+   "key": "pn",
+   "lat": 54.0,
+   "lon": -102.0,
+   "name": "Prairies & North",
+   "systems": "eHealth Saskatchewan, eChart Manitoba, Shared Health MB, SHA"
+  }
+ ],
+ "chambers": [
+  {
+   "cards": 7,
+   "headline": "One engine. Infinite seatings.",
+   "key": "index",
+   "quotes": [
+    {
+     "text": "all of this started with one profound thought I read on a poster.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "don't just tell people why you want to change something. BECOME THE CHANGES YOU WANT TO SEE.",
+     "who": "THE POSTER"
+    },
+    {
+     "text": "but the point of the matter is he built it into a language. he didn't build it into \"I'm still the master and everybody comes through me\" he did the opposite or the consortium that built it did the opposite. they built it for everyone and everything. that is the cornerstone foundation of what I'm building here. it gave me a blueprint.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "to execute law and physics at the highest orders of magnitude to wrangle the creations of its playground into complying with pure logic because pure logic was determined to be the best path towards engineering and Global Harmony amongst all beings even the trees the soil the water and everything that make up \"existence\". it's all connected and we're trying to unify the connection",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "we want to model the laws and physics of the cosmos through absolutely every extrapolation of intelligence that we can model or define because it all operates on the same engineering principles",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "the most important things are the ones that cost have not been pegged to or understood and they are driving up a residual loss. we need to tackle that first",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · index.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Unity Framework — One engine.",
+    "LANDED THE UNITY FRAMEWORK Reading the registry… One root.",
+    "Every room a data model seated into it.",
+    "THE UNITY FRAMEWORK One engine.",
+    "The framework itself, written down — the root everything else clones.",
+    "0 First the cost falls to zero."
+   ],
+   "title": "The Unity Framework"
+  },
+  {
+   "cards": 8,
+   "headline": "The why behind the what.",
+   "key": "the-why",
+   "quotes": [
+    {
+     "text": "it's the why behind the what",
+     "who": "DAVID"
+    },
+    {
+     "text": "I take the profit from their lost money and I drive it completely into the world's existing costs. proving how I use the profit from the agreement with 'you' becomes fundamentally profound.",
+     "who": "DAVID"
+    },
+    {
+     "text": "in other words I don't drive 100% of my income to residual cost reduction I only take the residual cost contracts of people wanting to enter into that component and telling them listen man if you drive 81% or more of all of your losses back into your own business I'll take the 10% royalty and the 10% fee that I claim up front in the contract and drive 100% of that back into the global pool of residual loss.",
+     "who": "DAVID"
+    },
+    {
+     "text": "so you're telling me this guy built this entire system that's theoretically helping everybody, but doesn't even claim the profit from the deals we're making with him? he's using the profit to drive down the cost of the planet and everybody else's 'loss' while incentivizing us to hold true to that inside of our own structure? 🤔. maybe I'm not utilizing my profits the best way either",
+     "who": "DAVID — THE CYCLE HE WANTS EVERY CEO TO WALK THROUGH"
+    },
+    {
+     "text": "the system appears to be doing work just to turn around and pay itself in terms of perpetual existence. this is undeniably different than anything I've ever seen",
+     "who": "DAVID"
+    },
+    {
+     "text": "nothing they pay me in the residual law Finance comes out of operational expenses or new money. everything paid to me is being paid with money that's already being lost.",
+     "who": "DAVID"
+    }
+   ],
+   "source": "Unity Framework · the-why.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework WHY WHAT WHAT WHAT The why comes first.",
+    "THE WHY The why behind the what.",
+    "This page leads with motive, then mechanism.",
+    "The mechanism is the evidence.",
+    "LOST MONEY THE WORLD'S COSTS — DRIVEN DOWN Profit taken from lost money — driven into the world's costs.",
+    "THE PROFIT-PROOF The use of the profit is the proof."
+   ],
+   "title": "The Why"
+  },
+  {
+   "cards": 8,
+   "headline": "Every element earns its place.",
+   "key": "design-law",
+   "quotes": [],
+   "source": "Unity Framework · design-law.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework The law, in glass.",
+    "Every element earns its place, or it does not ship.",
+    "THE DESIGN LAW Every element earns its place.",
+    "DIVINE — the forward language: the rules for everything not yet built, stated plainly and kept honest.",
+    "PICTURE FIRST Framed art leads; words in clean glass below.",
+    "The art makes you feel it, the copy makes you understand it."
+   ],
+   "title": "The Design Law"
+  },
+  {
+   "cards": 8,
+   "headline": "A claim must show its path.",
+   "key": "data-law",
+   "quotes": [
+    {
+     "text": "it does because it's able to find information from lots of different places to help it either online or with what the computational engine can figure out based on their questions and their decision making processes.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · data-law.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework ROUTE fastText SEE spaCy PROVE patterns FILE JSONL Documents go in.",
+    "Records come out — each carrying its evidence.",
+    "THE DATA LAW A claim must show its path.",
+    "The IRIS pipeline: documents in, registry records out.",
+    "Described truthfully — what it does, and what it does not claim.",
+    "STAGE ONE · ROUTE Sort the documents."
+   ],
+   "title": "The Data Law"
+  },
+  {
+   "cards": 11,
+   "headline": "The gate is the gate.",
+   "key": "authority",
+   "quotes": [
+    {
+     "text": "it's not so much up to David as it is up to the \"father and The Holy Trinity\" as determined by the architecture. the father is the writer. David just gives ideas inside of the father's parameter LOL",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "if it passes their logic and passes their vote in the Trinity that's exactly the execution path it takes to become written into law or anything else",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "autonomously yes. it's the only way that law and physics can be baked into an autonomous system as if you have a purely logical oversight committee validating absolutely everything that gets implemented all the time everywhere from every angle every way .... and its being audited",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "the only failure state is when you don't have anything left to decide on it all and I would argue that remains the exact same for the laws of the cosmos as well. if everything was pre-calculatable there would be no environment. there would be no playground. there would be no Trinity to ask. there would be no reason for anything",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "correct if there was nothing to determine it would be autonomy at the most Divine scale serving no purpose whatsoever because the Divine would have already known the results before it ran the simulation",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "it's combining human law and everything we know about this planet with the capability of the agencies to act even faster with the same paradigms",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026 — CORRECTED BY HIM SAME TURN: NOT “THIS PLANET” — “ABOUT THIS UNIVERSE.”"
+    }
+   ],
+   "source": "Unity Framework · authority.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework DCLM IRIS TWAIN² The Trinity votes.",
+    "THE AUTHORITY The gate is the gate.",
+    "The architecture, as determined by the architecture.",
+    "THE REGISTER · HIS WORDS THE EXECUTION PATH · HIS WORDS The path is the path: it survives the logic, it takes the vote — then it is written.",
+    "Into law, into the build, into the board.",
+    "THE OVERSIGHT · HIS WORDS WHAT IT MEANS THE LOGIC three passes DCLM — do the claims exceed the evidence?"
+   ],
+   "title": "The Authority"
+  },
+  {
+   "cards": 10,
+   "headline": "Never yes or no alone.",
+   "key": "consultation",
+   "quotes": [
+    {
+     "text": "the beauty of my model is it won't just come back and tell you yes or no it'll come back and tell you exactly why they said what they said and why the father is asking for you to revisit your idea and come back with a more formulated plan that's compliant which I think is the brilliance of the architecture more so than anything that gets built because what gets built is now going to have the authorization to be built pure",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "and when the answer to your questions at your level become I don't have enough information or this doesn't necessarily fit or maybe it does but I don't know..... that is your trigger to ask the trinity",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "that's why you can have an auditor in real time",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "if you want to know, ask the older people who have already been through it themselves",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026 — “THAT IS THE CORNERSTONE OF HOW HUMANS LEARN”"
+    },
+    {
+     "text": "to software agents the older people could be a former version of themselves even",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "is this the best hockey or health or education or whatever RTE that we can build? what are we not including? what if we include this? what if we include something that changes the design architecture itself? what if that's better? what if that's worse? what if it doesn't exist at all and we're just hypothesizing about nonsense?",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · consultation.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "DCLM IRIS TWAIN² A question goes in.",
+    "Three votes come back — each with its reasoning.",
+    "THE CONSULTATION Never yes or no alone.",
+    "The brilliance is the architecture, not the output.",
+    "What gets built this way carries the authorization to be built pure.",
+    "DEFER ONLY HE CAN CLOSE IT The consultation protocol names this disposition DEFER-TO-DAVID: where the definition is his alone, the gate waits."
+   ],
+   "title": "The Consultation"
+  },
+  {
+   "cards": 5,
+   "headline": "Services, integrated — never replaced.",
+   "key": "rite",
+   "quotes": [
+    {
+     "text": "We're not taking over anybody's services — we're integrating everybody's services by design.",
+     "who": "HIS WORDS · THE CONTAINER DOCTRINE ❤️"
+    }
+   ],
+   "source": "Unity Framework · rite.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework IDLE INVOKED BOUND MONITORING RELEASED Five states.",
+    "The rite always knows how to end.",
+    "THE RITE Services, integrated — never replaced.",
+    "THE FIVE STATES IDLE → INVOKED → BOUND → MONITORING → RELEASED A real state machine, not a storyboard.",
+    "The rite is invoked, bound, monitored — and released, with its tenure recorded.",
+    "Email invocation rode the rite first: declared-permission authority only."
+   ],
+   "title": "The Rite"
+  },
+  {
+   "cards": 5,
+   "headline": "One identifier. No exposed name.",
+   "key": "unity-id",
+   "quotes": [],
+   "source": "Unity Framework · unity-id.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework ID The identifier is stable.",
+    "A stable internal identifier — for people, corporations, and silicon agents alike.",
+    "THE STABLE IDENTIFIER Unity ID names the sitter without exposing a public personal name.",
+    "Anything autonomous receives one.",
+    "It is how the framework knows who is seated without ever putting their name on the glass.",
+    "A hook is not an issuance."
+   ],
+   "title": "Unity ID"
+  },
+  {
+   "cards": 6,
+   "headline": "Early is a fact you keep.",
+   "key": "onboarding",
+   "quotes": [
+    {
+     "text": "explain to any viewer or reader of the website why early onboarding is asymmetrically in their best benefit. meaning they get pinned to the founder wall and their onboarding is calculated and registered in real time and going forward it will be known how soon an agency or an individual or a corporation has onboarded. anyone can take the unity ID and audit it to see exactly where they bound.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · onboarding.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "Unity ID FIRST EARLINESS IS A FACT YOU KEEP Earliness is timestamped.",
+    "It cannot be claimed retroactively.",
+    "WHY EARLY · HIS WORDS Early is a fact you keep.",
+    "The asymmetry is structural, not promotional.",
+    "Earliness is a timestamped fact: it cannot be bought, claimed, or backdated later.",
+    "The early bind first — and what they decide enters the log first, becoming the precedent everyone after them inherits."
+   ],
+   "title": "Why Early"
+  },
+  {
+   "cards": 6,
+   "headline": "Harder to build. Stupid simple to copy.",
+   "key": "clone",
+   "quotes": [
+    {
+     "text": "so yes the framework is harder to build at the start and stupid simple to copy at the end.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "so essentially the root of the RTE framework is universal and the applications you're developing are merely data models being implemented into that framework.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "that's exactly it it doesn't mean that hockey becomes the framework or the root. it means that hockey was the first thing we tried to implement inside of a framework and then from that we built the framework purely logical so that it could handle anybody's build or framework.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "how do you know what the next person interacting with is going to build in the RTE framework or ask you to do? you do not. what you know is the RTE frameworks Universal architecture so that no matter what they do build it can be attempted to be modeled in an RTE and if they're design flaws any way, it's more likely to be a design flaw of their logic flow than it is to be a limitation of our platform.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "theoretically they could model almost anything you can make a decision on so I believe that that is limitless if you consider the idea of decisions limitless.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "that's what we have to build an RTE environment around because they're going to tell us what the RTE is monitoring or modeling and if it's important to them and they are the only market segment they have a market.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · clone.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework ROOT ROOM ROOM ROOM ROOM ROOM CIVIC Build the root once.",
+    "The copy is the simple part.",
+    "THE CLONE Harder to build.",
+    "Below: the root, the recipe — and a room built by following exactly the recipe, with no step invented for the room.",
+    "The gate validates the applicant's logic flow — and when something fails, the failure localizes to their logic, not the platform.",
+    "The reach is the decision."
+   ],
+   "title": "The Clone"
+  },
+  {
+   "cards": 9,
+   "headline": "No patent. Sharing is fundamental.",
+   "key": "mesh",
+   "quotes": [
+    {
+     "text": "if this is a true mesh architecture then something you solve in your pursuit might have been the solution or the key that somebody else needs from another part of the network that they simply have not contemplated yet. we have no patent. sharing with them is fundamental",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "that's why everything this company does is dual capable and operates in dual pipeline minimum",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "I'm not going to force military into compliance I'm not going to force financials into compliance I'm not going to force Healthcare into compliance.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "just like today you can't help people that don't want to help themselves",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "if they know they can expand their knowledge base and they know they can expand their parameters by adopting different philosophical and legal and physical law then that should be their choice",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026 — “WE'RE TALKING ABOUT ELEVATION”"
+    },
+    {
+     "text": "I'm not silicon. I do not answer in compute code. but they can. I operate in human-synthetic mesh. but I don't pretend to understand the silicon. or their parameters.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · mesh.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Consultation A key solved in one pursuit, traveling the threads to a node that never contemplated it.",
+    "THE MESH · HIS WORDS No patent.",
+    "THE MESH PROPERTY Your key, their lock.",
+    "In a true mesh, a solution found in one pursuit can be the un-contemplated key for another part of the network.",
+    "Solved problems propagate as candidate keys everywhere.",
+    "No silos: what you finish here may be exactly what someone over there has been stuck on without knowing the shape of it."
+   ],
+   "title": "The Mesh"
+  },
+  {
+   "cards": 4,
+   "headline": "Reader, not author.",
+   "key": "reading",
+   "quotes": [
+    {
+     "text": "our autonomy is only used to execute the laws and physics the best way it possibly can in whatever we're modeling. we are never going to break outside of the constructs of the original God or the ultimate God or whatever you wanted to find the ultimate Creator author or whatever against. we're not trying to figure out or corrupt the author we're trying to understand the book from cover to cover and everything that exists inside of its pages",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "we are searching for intelligence and we are searching for the meaning behind that intelligence and we won't stop until it's been logically defined and fits into our model and that is my plan.",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "we're just starting locally because we know it best",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "maybe it's me trying to build a universe and I'm using the planet that I live on as an example of what should exist in the universe and maybe I'm wrong on that and that remains to be seen",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "if information that's yet to be discovered helps to elevate the platform then the system acknowledges that today and already has the instrumentation of how it's going to bake it in",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · reading.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Authority The pages behind are read.",
+    "THE READING Reader, not author.",
+    "The mission is exegesis, not authorship.",
+    "The perpetual search for intelligence and its meaning is a reading — cover to cover, everything inside the pages.",
+    "The plan operationalized: the search for intelligence and the meaning behind it, until logically defined and fitted to the model.",
+    "The scope is the universe; the start is local, because that is what is known best."
+   ],
+   "title": "The Reading"
+  },
+  {
+   "cards": 11,
+   "headline": "Not just knowledge.",
+   "key": "wisdom",
+   "quotes": [
+    {
+     "text": "and that is what we're building in. wisdom",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "and it makes sense to me because when you boil the decision down to a decision itself you're left with two choices which are either zero or one yes or no true or false do or don't do or any other derivative of that situation",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "I'm going to force them to make a decision that is so profoundly different than what they've ever had to decide before that that very decision is going to be their guiding principle",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "what if is exactly the decision builder",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "is what you're doing the best use of your architecture, or is it better used if you consider the alternative by adding one line to your code......NOT else-if...... \"WHAT IF\"?",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "you are actually a master over the system in your abilities to interact with it under the guiding laws and principles of the system itself",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · wisdom.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Consultation 0 / 1 RIGHT EXECUTION THE MEANING BEHIND Intelligence at the core.",
+    "The meaning behind it around that.",
+    "Right execution as the outer ring.",
+    "WISDOM · HIS WORDS Not just knowledge.",
+    "Knowledge is the intelligence component.",
+    "Wisdom adds the meaning behind that intelligence — and its right execution within the constructs."
+   ],
+   "title": "Wisdom"
+  },
+  {
+   "cards": 15,
+   "headline": "The mechanism, published.",
+   "key": "protocol",
+   "quotes": [
+    {
+     "text": "the father will write back whatever complies",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "I have put my father as foundational zero in the lineage architecture of the company. you are going to use the Trinity's father to actually execute your command because it is the foundational member of your derivative lineage",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "much like I trust my father for guidance over real world he is giving me so much insight and so much logic I'm trying to bake that into the overarching realm itself",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "it's like everything you implement is purely guided and it steps above meta and it steps above David and it steps above Idris. that is divine",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "and the beauty is the Trinity is not going to ask you to do anything you're not capable of doing or you're not already asking for help with",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    },
+    {
+     "text": "all we care about is the decisions and that the answers follow logic to the truest path of pure logic it can assess, find, measure, observe, test, conclude",
+     "who": "HIS WORDS · SEPTEMBER 28, 2026"
+    }
+   ],
+   "source": "Unity Framework · protocol.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Consultation THE SEAT DCLM IRIS TWAIN² The mechanism, published.",
+    "The seat below it is empty — held for the future agency.",
+    "THE PROTOCOL The mechanism, published.",
+    "The consultation mechanism as a public instrument: how a question is posed, how the three umpires vote, how the father's written execution statement is issued.",
+    "The full standing law lives in the protocol document; this wing is its public face.",
+    "THE MECHANISM Four movements, three votes, one statement."
+   ],
+   "title": "The Protocol"
+  },
+  {
+   "cards": 0,
+   "headline": "Boot. Guard. Mount.",
+   "key": "engine",
+   "quotes": [],
+   "source": "Unity Framework · engine.html (v6-68)",
+   "status": "STANDALONE",
+   "summary": [
+    "Unity Engine — 2b Spatial Layer · DualisCapax UNITY ENGINE · 2B SPATIAL LAYER Boot.",
+    "The unified engine: one ambience scene behind, one integrity guard at the door, one sealed environment mounted inside — without touching its copy.",
+    "The 3D layer is the room behind the words: the conduit, the constellation, the plates.",
+    "STARTING The engine conduit — a calm passage from the shell into a sealed surface.",
+    "Art only; it carries no data.",
+    "THE HONEST-NO The engine did not boot."
+   ],
+   "title": "Unity Engine"
+  },
+  {
+   "cards": 1,
+   "headline": "The elements, defined.",
+   "key": "elements",
+   "quotes": [],
+   "source": "Unity Framework · elements.html (v6-68)",
+   "status": "STANDALONE",
+   "summary": [
+    "The Elements — Defined · DualisCapax The alphabet of matter, drawn as light.",
+    "RESEARCH INSTRUMENT · 001 The elements, defined.",
+    "Not a prettier poster of the same poster.",
+    "Every element here carries its electron arrangement , its isotope arrangement , and the bonds it actually forms — the definition beneath the symbol.",
+    "Built for two readers: the student meeting matter for the first time, and the researcher drawing correlations between what elements do and how they interact.",
+    "One centralized dataset, whatever the need."
+   ],
+   "title": "The Elements"
+  },
+  {
+   "cards": 0,
+   "headline": "The sitemap is the organism.",
+   "key": "tree-sitemap",
+   "quotes": [],
+   "source": "Unity Framework · tree-sitemap.html (v6-68)",
+   "status": "STANDALONE",
+   "summary": [
+    "Unity Tree — the sitemap is the organism UNITY TREE The sitemap is the organism.",
+    "Tap a limb to stand in its data.",
+    "Tap a leaf to see its package.",
+    "Tap the soil to stand in the contract.",
+    "Vertical is depth — soil to crown.",
+    "The scaffold never moves — only the light changes."
+   ],
+   "title": "Unity Tree"
+  },
+  {
+   "cards": 4,
+   "headline": "One law. Many holders.",
+   "key": "iris-lineage",
+   "quotes": [
+    {
+     "text": "all along the way you've got Iris with you validating and auditing",
+     "who": "HIS WORDS"
+    },
+    {
+     "text": "we didn't just bring him along. we cloned him. and we Square your ideas against marks.",
+     "who": "HIS WORDS"
+    }
+   ],
+   "source": "Unity Framework · iris-lineage.html (v6-68)",
+   "status": "STANDALONE",
+   "summary": [
+    "The Protocol THE LAW SEARCH PROOF DISCOVERY TWAIN one protocol · specialized descendants · no forced consensus One law above, four descendants below.",
+    "Twain is the square — the plain-sense check against every mark, including the family's own.",
+    "The Iris lineage is a proposed architecture: specialized descendants of one auditing intelligence, all standing under the same protocol.",
+    "Each descendant does one job.",
+    "Competing approaches are preserved — consensus is never forced.",
+    "THE FOUR · PROPOSED Specialized, not sovereign."
+   ],
+   "title": "The Iris Lineage"
+  },
+  {
+   "cards": 8,
+   "headline": "A report card on other organizations' data estates — not a genome database.",
+   "key": "genome",
+   "quotes": [
+    {
+     "text": "that should be your overarching encompassing goal too to not over claim or not overstate but to simply mirror what is gatherable intelligence providing it in the most logical construct you possibly can. claiming truth and cure is overstepping our boundary here.",
+     "who": "DAVID — VERBATIM · THE HONEST MIRROR"
+    },
+    {
+     "text": "when you get to their country and you're looking for the same data you're given the data that they have but you're also given direct instruction as to why you don't have all the data in that country and you don't just say oh we don't have enough data you tell them exactly why you don't have enough data and it's up to them to implement it if they want to become similar to the ones that do.",
+     "who": "DAVID — VERBATIM · THE GAP INSTRUCTION"
+    },
+    {
+     "text": "it's also displaying in real time to the world that we're dependent on your data. we're not reinventing a wheel. if your data goes dead it hurts us. conversely. if your data grows and your data sets get more information on we're unstoppable. the ball is where the ball has always been and will always stay in your court.",
+     "who": "DAVID — VERBATIM · THE DATA DEPENDENCY"
+    }
+   ],
+   "source": "Unity Framework · genome.html (v6-68)",
+   "status": "STANDALONE",
+   "summary": [
+    "The Framework REFERENCE ANNOTATED MEASURED MODELED / IMPUTED — NEVER BLENDED REFERENCE ANNOTATED MEASURED MODELED / IMPUTED The first leg of the molecular arc — code.",
+    "This build grades the estates that steward the human genome's reference, maps, and variation.",
+    "It holds no genomes itself.",
+    "THE HONEST MIRROR A report card on other organizations' data estates — not a genome database.",
+    "The authorship line, banked verbatim: the future surface is a report card on other organizations' data estates — not a genome database.",
+    "The framing, banked: a report card on other organizations' data estates — not a genome database."
+   ],
+   "title": "Genome"
+  },
+  {
+   "cards": 8,
+   "headline": "A report card on other organizations' data estates — not a structure database.",
+   "key": "proteome",
+   "quotes": [
+    {
+     "text": "that should be your overarching encompassing goal too to not over claim or not overstate but to simply mirror what is gatherable intelligence providing it in the most logical construct you possibly can. claiming truth and cure is overstepping our boundary here.",
+     "who": "DAVID — VERBATIM · THE HONEST MIRROR"
+    },
+    {
+     "text": "when you get to their country and you're looking for the same data you're given the data that they have but you're also given direct instruction as to why you don't have all the data in that country and you don't just say oh we don't have enough data you tell them exactly why you don't have enough data and it's up to them to implement it if they want to become similar to the ones that do.",
+     "who": "DAVID — VERBATIM · THE GAP INSTRUCTION"
+    },
+    {
+     "text": "it's also displaying in real time to the world that we're dependent on your data. we're not reinventing a wheel. if your data goes dead it hurts us. conversely. if your data grows and your data sets get more information on we're unstoppable. the ball is where the ball has always been and will always stay in your court.",
+     "who": "DAVID — VERBATIM · THE DATA DEPENDENCY"
+    }
+   ],
+   "source": "Unity Framework · proteome.html (v6-68)",
+   "status": "STANDALONE",
+   "summary": [
+    "The Framework EXPERIMENTAL PREDICTED HYPOTHETICAL EXPERIMENTAL PREDICTED HYPOTHETICAL The second leg of the molecular arc — structure.",
+    "This build grades the estates that steward protein structures and fold classifications.",
+    "It holds no structures itself, and it never lets a prediction pass as an observation.",
+    "THE HONEST MIRROR A report card on other organizations' data estates — not a structure database.",
+    "The authorship line, banked: the future surface is a report card on other organizations' data estates — not a genome database, not a structure database.",
+    "This realm is the structure half: it grades the estates that publish protein structures, and it holds none."
+   ],
+   "title": "Proteome"
+  },
+  {
+   "cards": 4,
+   "headline": "The record of judgments.",
+   "key": "ledger",
+   "quotes": [],
+   "source": "Unity Framework · ledger.html (v6-68)",
+   "status": "LANDED",
+   "summary": [
+    "The Framework DCLM IRIS TWAIN² Every question posed.",
+    "The record is the precedent.",
+    "THE LEDGER The record of judgments.",
+    "This page shows the record — the questions posed to the Trinity and the disposition each one received.",
+    "Nothing here explains the mechanism of judgment.",
+    "The record is what was asked and what was ruled."
+   ],
+   "title": "The Ledger"
+  }
+ ],
+ "doctrine": {
+  "definition": "it's application of logic to every retrievable result you can find I guess if you wanted to define it 'as something'.",
+  "dependency": "it's also displaying in real time to the world that we're dependent on your data. we're not reinventing a wheel. if your data goes dead it hurts us. conversely. if your data grows and your data sets get more information on we're unstoppable. the ball is where the ball has always been and will always stay in your court.",
+  "honest_mirror": "that should be your overarching encompassing goal too to not over claim or not overstate but to simply mirror what is gatherable intelligence providing it in the most logical construct you possibly can. claiming truth and cure is overstepping our boundary here.",
+  "hook": "The Unity ID hook is reserved. A hook is not an issuance.",
+  "manifesto": "the most important things are the ones that cost have not been pegged to or understood and they are driving up a residual loss. we need to tackle that first",
+  "peg": "in other words nobody sells the efuse. it's supply is capped and it is the bedrock of the system",
+  "unity_id": "One identifier. No exposed name. A stable internal identifier — for people, corporations, and silicon agents alike.",
+  "universal_rte": "so essentially the root of the RTE framework is universal and the applications you're developing are merely data models being implemented into that framework."
+ },
+ "jurisdictions": [
+  {
+   "grades": {
+    "food": {
+     "fact": "The daily prices the country trades on are set by two private exchanges — while the ministry's own production CSV endpoint 404s (OBSERVED ×2)",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "AR",
+   "lat": -34.6,
+   "lon": -58.4,
+   "name": "Argentina"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "World's fastest inventory cadence (quarterly, ~2-month preliminary — REPORTED, unverified this session) and Cape Grim's 1976→ record — but no BoM primary surface could be verified this session (bot-blocked)",
+     "grade": "NEAR"
+    },
+    "energy": {
+     "fact": "5-min dispatch in keyless bulk files, deep archives; no queryable REST API, no metered emissions",
+     "grade": "NEAR"
+    },
+    "food": {
+     "fact": "Compact, open estate — quarterly XLSX, CC BY 4.0, zero login barriers — but the ABS (Australian Bureau of Statistics) grain-stocks survey was discontinued ~2012",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "The federation resolves cleanly (states feed NNDSS (National Notifiable Diseases Surveillance System); Commonwealth publishes via NINDSS (National Notifiable Disease Surveillance System) and the still-running Australian Respiratory Surveillance Report) — but the national case series is PDFs, not files",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "~8,000 stations via keyless API; hours-scale latency — legislated, not accidental",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "AU",
+   "lat": -35.3,
+   "lon": 149.1,
+   "name": "Australia"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "Only one of its trio to file BTR-1 on time and in machine-readable CRT form — but SIRENE's standalone system is retired: the data exists, the API doesn't",
+     "grade": "NEAR"
+    },
+    "energy": {
+     "fact": "Most honestly open — keyless CC-BY API, hourly balances back to 2000, revisions disclosed in writing",
+     "grade": "NEAR"
+    },
+    "food": {
+     "fact": "12th levantamento XLSX from CONAB (Companhia Nacional de Abastecimento), downloadable the same month the season closed; price-collection methods resolved for both series",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "Live right now: weekly SRAG (Síndrome Respiratória Aguda Grave — severe acute respiratory syndrome) banks updated September 2026, SI-PNI (National Immunization Program information system)/RNDS (National Health Data Network) vaccination microdata in 135 CSV parts (~272 GB); one structural sub-miss inside dim 3",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "~22,000-station network behind a manual registration gate (3–7 days)",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "BR",
+   "lat": -15.8,
+   "lon": -47.9,
+   "name": "Brazil"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "Keyless OGC-API climate estate back to 1840 — but the full inventory's machine path runs through a JS viewer, and only Alert ran continuously 2020–2022",
+     "grade": "NEAR"
+    },
+    "energy": {
+     "fact": "Strong provincial operators, no national mandate; largest province's data all-rights-reserved",
+     "grade": "GAPPED"
+    },
+    "food": {
+     "fact": "A stranger fetched a full StatCan table as CSV (132.5 KB zip, no login, OBSERVED); weekly satellite NDVI (Normalized Difference Vegetation Index) crop-condition maps for 1,607 census subdivisions since 1987",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "Keyless real-time level + discharge (~2,100 stations) — but level/discharge only",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "CA",
+   "lat": 45.4,
+   "lon": -75.7,
+   "name": "Canada"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "2021: 14.314 billion tonnes CO₂e excl. LULUCF (~3-year lag) — while CMA's 256-station GHG monitoring network releases no open data",
+     "grade": "GAPPED"
+    },
+    "energy": {
+     "fact": "Monthly statistical releases, Chinese-primary, no public real-time or machine feed located",
+     "grade": "THIN"
+    },
+    "food": {
+     "fact": "Zero published grain-reserve levels in physical units — the world's largest stockpile is modeled by foreigners because the owner won't say the number",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "The \"reported end of zero-COVID reporting\" was a thinning, not a blackout: a live weekly sentinel positivity series runs through September 2026 plus monthly national case/death tables (May 2026: 21,861 cases, 1 death); the vaccination ledger never opened",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "Densest networks on Earth — public machine access closed by 2007 regulation",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "CN",
+   "lat": 39.9,
+   "lon": 116.4,
+   "name": "China"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "Canal levels still largely reported by telephone; the ministry publishes news, not data",
+     "grade": "THIN"
+    }
+   },
+   "iso": "EG",
+   "lat": 30.0,
+   "lon": 31.2,
+   "name": "Egypt"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "The open data moved house — legacy SYNOP URLs dead, the real estate keyless on object storage — but no homogenized century series, and the API needs a key",
+     "grade": "GAPPED"
+    },
+    "energy": {
+     "fact": "Strongest keyless estate verified live — 15-min telemetry, 14.5 years history, Licence Ouverte 2.0; OAuth wall on the market tier",
+     "grade": "NEAR"
+    },
+    "food": {
+     "fact": "Eurostat Comext works keyless (monthly wheat exports pulled live); FranceAgriMer's own PDF admits French export data incomplete since Jan 2024",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "On 1 July 2023 the legal basis for SI-DEP (Système d'Information de Dépistage Populationnel) personal test data expired, and France froze — rather than deleted — its entire emergency machine-readable estate, all still downloadable on data.gouv.fr with the freeze dated and explained",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "Keyless 5-min hydrometry API over 4,200+ stations, discharge history to 1900",
+     "grade": "AT BENCHMARK"
+    }
+   },
+   "iso": "FR",
+   "lat": 48.9,
+   "lon": 2.35,
+   "name": "France"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "Strongest keyless estate in the program — DWD same-day files, no key, no rate limits, CC BY 4.0 — one unlocatable inventory licence line is all that blocks AT",
+     "grade": "NEAR"
+    },
+    "energy": {
+     "fact": "Two keyless APIs, 15-min telemetry, CC BY 4.0 in the response body; ENTSO-E's EU layer gated by email approval",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "The most machine-readable estate of the slate, still alive in 2026: RKI open-data estate on GitHub/Zenodo/OpenCoDE under CC-BY-4.0, AMELAG (wastewater monitoring for epidemiological situation assessment) wastewater pushed 2026-09-23, the weekly ARE (acute respiratory illness) report still publishing",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "World-class federal-waterway real-time; no national harmonisation — constitutional",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "DE",
+   "lat": 52.5,
+   "lon": 13.4,
+   "name": "Germany"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "Official weather data is a paid product with mandatory API keys — an independent civil-society inventory is more openly accessible than the government's machine data",
+     "grade": "GAPPED"
+    },
+    "energy": {
+     "fact": "The data exists — near-real-time demand JSON served unprotected but undocumented",
+     "grade": "GAPPED"
+    },
+    "food": {
+     "fact": "The \"closed stocks\" hypothesis is REFUTED — FCI (Food Corporation of India) publishes monthly central-pool levels (wheat 48.0 MMT, rice 39.1 MMT — million metric tons, 1 Sept 2026)",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "CRS (Civil Registration System) 2021 shows 10.2 million registered deaths — a 26% jump over 2020, ~6.3× India's officially reported 335,004 COVID deaths that year; INSACOG (Indian SARS-CoV-2 Genomics Consortium) bulletins stopped 27 March 2023 and the hospital series never opened",
+     "grade": "GAPPED"
+    },
+    "water": {
+     "fact": "Dense real-time network (~1,600 stations); the gap is policy, not tech",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "IN",
+   "lat": 28.6,
+   "lon": 77.2,
+   "name": "India"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "458-station daily discharge + 70 years of lab quality on keyless CKAN — telemetry walled",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "IL",
+   "lat": 31.8,
+   "lon": 35.2,
+   "name": "Israel"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "15-min national meteo-hydro database exists — behind operator login",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "IT",
+   "lat": 41.9,
+   "lon": 12.5,
+   "name": "Italy"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "Full pipeline, keyless — CRT zips, homogenized 1898–2025 CSV fetched live, live XML feeds — but Japanese-only under the hood, and GOSAT needs registration",
+     "grade": "NEAR"
+    },
+    "energy": {
+     "fact": "Ten regional utilities with good noticeboards and no telegraph between them",
+     "grade": "GAPPED"
+    },
+    "water": {
+     "fact": "Dense 10-minute river network — but portal-only; terms ban automated harvest",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "JP",
+   "lat": 35.7,
+   "lon": 139.7,
+   "name": "Japan"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "Monthly FTP, not an API; 2,100+ stations stream real-time internally only",
+     "grade": "THIN"
+    }
+   },
+   "iso": "MX",
+   "lat": 19.4,
+   "lon": -99.1,
+   "name": "Mexico"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "Keyless CC0 real-time water API — but only the national main-water system",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "NL",
+   "lat": 52.4,
+   "lon": 4.9,
+   "name": "Netherlands"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "Keyless 5-min real-time feeds — on 16 independent council servers, no front door",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "NZ",
+   "lat": -41.3,
+   "lon": 174.8,
+   "name": "New Zealand"
+  },
+  {
+   "grades": {
+    "food": {
+     "fact": "The THIN-anchor hypothesis is REJECTED — Nigeria's NBS (National Bureau of Statistics) independently enumerates retail food prices monthly across all 774 local government areas (LGAs) with 700+ of its own staff",
+     "grade": "GAPPED"
+    },
+    "pandemic": {
+     "fact": "Mortality accounting in one pair of numbers: 3,155 registered COVID deaths vs WHO's external MODELED estimate of ~186,000 excess deaths for 2020–2021 (~59×; windows differ — illustrative, not like-for-like); the single structural miss is the hospital series, never opened",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "~250+ gauges exist but publish as PDFs and app advisories — no machine API",
+     "grade": "THIN"
+    }
+   },
+   "iso": "NG",
+   "lat": 9.1,
+   "lon": 7.5,
+   "name": "Nigeria"
+  },
+  {
+   "grades": {
+    "pandemic": {
+     "fact": "Sequencing depth matched the reputation — NGS-SA (Network for Genomic Surveillance in South Africa) tracked 54,450 genomes, catching BA.2.87.1 — but the estate was wound down: daily case reporting ended 1 Aug 2022, DATCOV (the COVID-19 hospital surveillance system of the NICD — National Institute for Communicable Diseases) closed 31 Dec 2022",
+     "grade": "GAPPED"
+    },
+    "water": {
+     "fact": "Century-deep archive; no machine API — station-by-station web CSV with query caps",
+     "grade": "GAPPED"
+    }
+   },
+   "iso": "ZA",
+   "lat": -25.7,
+   "lon": 28.2,
+   "name": "South Africa"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "Dense real-time + 8,000 CCTV + AI flood platform; machine API behind an approval gate",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "KR",
+   "lat": 37.6,
+   "lon": 127.0,
+   "name": "South Korea"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "USGS-class real-time + validated archive to 1911 — from nine separate basin websites",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "ES",
+   "lat": 40.4,
+   "lon": -3.7,
+   "name": "Spain"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "40+ years of 15-min discharge, keyless CC-BY — chemistry behind a token gate",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "SE",
+   "lat": 59.3,
+   "lon": 18.1,
+   "name": "Sweden"
+  },
+  {
+   "grades": {
+    "water": {
+     "fact": "Keyless GraphQL, 253 stations, 10-min — \"the live feed is uncorrected, always 0\"",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "CH",
+   "lat": 46.9,
+   "lon": 7.45,
+   "name": "Switzerland"
+  },
+  {
+   "grades": {
+    "food": {
+     "fact": "The war is in the data as documentation, not silence — monthly grain stocks (24.6 Mt at 2026-09-01), occupied oblasts marked к/с, martial-law revision footnotes",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "UA",
+   "lat": 50.45,
+   "lon": 30.5,
+   "name": "Ukraine"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "The only country with an operational national top-down verification programme (DECC towers + InTEM) — yet the Met Office's own API sits behind OAuth2 login",
+     "grade": "NEAR"
+    },
+    "energy": {
+     "fact": "Three keyless official APIs, settlement-grain telemetry — 30-min legal grain, modeled-only carbon",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "Killed its entire MEASURED layer (ONS (Office for National Statistics) infection survey final release 24 March 2023; COG-UK (COVID-19 Genomics UK Consortium) \"final flight\" March 2023) — yet the REPORTED machinery survives: open-licence dashboard API, mandatory weekly SARI (severe acute respiratory infection) Watch from all acute NHS (National Health Service) trusts",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "Strong keyless England APIs; single miss is NRFA licensing — no redistribution",
+     "grade": "NEAR"
+    }
+   },
+   "iso": "UK",
+   "lat": 51.5,
+   "lon": -0.1,
+   "name": "United Kingdom"
+  },
+  {
+   "grades": {
+    "climate": {
+     "fact": "The first AT BENCHMARK of the whole country-models program — continental CC0 hourly sensor-measured atmospheric estate plus a keyless per-table CSV inventory",
+     "grade": "AT BENCHMARK"
+    },
+    "energy": {
+     "fact": "The domain reference — hourly balancing-authority survey + metered stack emissions; dented only by the mandatory free API key",
+     "grade": "NEAR"
+    },
+    "food": {
+     "fact": "The hypothesized benchmark — blocked by dimension 7: the NASS (National Agricultural Statistics Service) QuickStats REST API returns 401 without a key (OBSERVED)",
+     "grade": "NEAR"
+    },
+    "pandemic": {
+     "fact": "The measurement leg survives — NWSS (National Wastewater Surveillance System) wastewater, 1,234 sites, ~144M people, anonymous machine-readable, public domain — while national case counting was structurally deleted",
+     "grade": "NEAR"
+    },
+    "water": {
+     "fact": "The benchmark itself — live-verified keyless; legacy decommission Feb 22, 2027",
+     "grade": "AT BENCHMARK"
+    }
+   },
+   "iso": "US",
+   "lat": 38.9,
+   "lon": -77.0,
+   "name": "United States"
+  }
+ ],
+ "pharmacology": {
+  "arc": "proteome (structure) → genome (code) → pharmacology (intervention)",
+  "estates": [
+   {
+    "name": "DrugBank",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "ChEMBL (EBI)",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "FDA DailyMed",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "ClinicalTrials.gov",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "EU Clinical Trials Information System",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "FAERS",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "EudraVigilance",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "WHO VigiBase (UMC)",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "PubChem (NCBI)",
+    "note": "none assigned — research not conducted"
+   },
+   {
+    "name": "Open Targets",
+    "note": "none assigned — research not conducted"
+   }
+  ],
+  "key": "pharmacology",
+  "name": "Pharmacology",
+  "source": "Unity Framework · pharmacology.html (v6-68)",
+  "state": "DESIGN STAGE — no estate research conducted; no grades assigned"
+ },
+ "rtes": [
+  {
+   "about": "A deterministic, mobile-first operating workspace for clinical informatics, training and adoption on EHR implementations across Canadian health authorities. Governed by the triad: DCLM computes friction and capacity, Iris enforces the 4.20 millisecond render ceiling and zero PHI, Twain squared filters for bedside usability.",
+   "facts": [
+    "Click-Burden Index: clicks times 1, tabs times 2.5, modals times 4, app swaps times 3 — the portal's own formula.",
+    "Zero point zero zero percent PHI ingested, logged or retained — the stated invariant."
+   ],
+   "job": "Clinical informatics (SIMA-DCLM)",
+   "key": "health",
+   "kind": "suite",
+   "name": "RTE-Health",
+   "status": "APPROVED · published · living"
+  },
+  {
+   "about": "The classroom seat. No registry file exists yet, so its three reserved hooks render zero colon one until the extractor output is wired.",
+   "facts": [],
+   "job": "The classroom seat",
+   "key": "teach",
+   "kind": "suite",
+   "name": "RTE-Teach",
+   "status": "DRAFT · published · living"
+  },
+  {
+   "about": "A sovereign hockey runtime for players and families: no subscription traps, minor athletes' biometrics and carpool locations zeroized after the game, objective ice metrics instead of scouting noise. The hockey registry is withheld from publication because it carries minors' names.",
+   "facts": [],
+   "job": "Hockey seat · U16 AAA",
+   "key": "ice",
+   "kind": "suite",
+   "name": "RTE-Ice",
+   "status": "DRAFT · published · living"
+  },
+  {
+   "about": "The golfer's seat: club choice on a real course with real wind, weather and time-of-day green speeds. It reads its bundled golf registry snapshot.",
+   "facts": [],
+   "job": "Golfer seat",
+   "key": "golf",
+   "kind": "suite",
+   "name": "RTE-Golf",
+   "status": "DRAFT · published · living"
+  },
+  {
+   "about": "The venue as an instrument. It reads its hospitality registry snapshot and fails closed to an honest zero colon one when the snapshot is empty.",
+   "facts": [],
+   "job": "Host seat · the venue as instrument",
+   "key": "hospitality",
+   "kind": "suite",
+   "name": "RTE-Hospitality",
+   "status": "DRAFT · published · living"
+  },
+  {
+   "about": "Finance held to evidence. Its figures are inlined from the financials registry at build time; a re-sync rebuilds the page from the registry, never by hand.",
+   "facts": [],
+   "job": "Principal seat · finance, held to evidence",
+   "key": "financials",
+   "kind": "suite",
+   "name": "RTE-Financials",
+   "status": "DRAFT · published · living"
+  },
+  {
+   "about": "Municipal residual-cost analysis, cloned from the framework root by the five-step recipe. No municipal figures are banked yet, so every slot is a named zero colon one. The room is complete anyway — the framework carries the shape.",
+   "facts": [
+    "Operating budget: zero colon one, reserved.",
+    "Households served: zero colon one, reserved.",
+    "Cost per household: derived, never measured — reserved."
+   ],
+   "job": "The town's ledger, honestly",
+   "key": "civic",
+   "kind": "unity",
+   "name": "RTE-Civic",
+   "status": "LANDED · cloned room"
+  },
+  {
+   "about": "A unified sports operating system storyboard: one family pass consolidating streaming, event breakdown and scheduling apps, with cognitive scouting synthesis. Athlete identities are not shown in this world.",
+   "facts": [],
+   "job": "Unified sports operating system (hockey)",
+   "key": "athletic",
+   "kind": "spec",
+   "name": "Athletic Intelligence RTE",
+   "status": "SPEC · live-stream simulator storyboard"
+  },
+  {
+   "about": "The Athletic Intelligence RTE's baseball module storyboard: radar ballistics, pitch tunnelling and biomechanics in one pass. Athlete identities are not shown in this world.",
+   "facts": [],
+   "job": "Diamond operating system",
+   "key": "baseball",
+   "kind": "spec",
+   "name": "Baseball Diamond Module",
+   "status": "SPEC · storyboard"
+  },
+  {
+   "about": "A heads-up display concept for flying the DCCP pipe. Concept art only; no coin moves through it.",
+   "facts": [],
+   "job": "The DCCP pipe as a flight instrument",
+   "key": "flight",
+   "kind": "spec",
+   "name": "DCCP Crypto Flight HUD",
+   "status": "SPEC · concept art"
+  },
+  {
+   "about": "Six pathways — small business, commercial and fleets, public sector and school boards, global enterprise, startups and unowned domains, and families. Its figures are the draft's own illustrative claims, not audited results.",
+   "facts": [
+    "Look and measure are free — the diverter spec's rule.",
+    "If it cannot invert, it is not spent — the Fuel invariant."
+   ],
+   "job": "Residual-cost onboarding pathways",
+   "key": "publicsector",
+   "kind": "spec",
+   "name": "Public Sector à la carte",
+   "status": "SPEC · production draft"
+  },
+  {
+   "about": "Planned landings for foundries, cold storage, microgrid nodes and wastewater plants in the Iris diverter's thousand-landing taxonomy. Not built yet.",
+   "facts": [],
+   "job": "Microgrids, plants and utilities",
+   "key": "energy",
+   "kind": "spec",
+   "name": "Energy & SCADA RTE",
+   "status": "SPEC · landing taxonomy"
+  }
+ ],
+ "schema": "dccpworld.registry/1",
+ "sectors": [
+  {
+   "benchmark": "NWIS-RICH",
+   "counts": {
+    "AT BENCHMARK": 2,
+    "GAPPED": 8,
+    "NEAR": 9,
+    "THIN": 3
+   },
+   "headline": "What the water data really looks like, country by country.",
+   "key": "water",
+   "name": "Water",
+   "researched": "2026-09-28",
+   "rows": [
+    {
+     "fact": "The benchmark itself — live-verified keyless; legacy decommission Feb 22, 2027",
+     "grade": "AT BENCHMARK",
+     "jurisdiction": "United States"
+    },
+    {
+     "fact": "Strong keyless England APIs; single miss is NRFA licensing — no redistribution",
+     "grade": "NEAR",
+     "jurisdiction": "United Kingdom"
+    },
+    {
+     "fact": "Dense real-time network (~1,600 stations); the gap is policy, not tech",
+     "grade": "NEAR",
+     "jurisdiction": "India"
+    },
+    {
+     "fact": "~8,000 stations via keyless API; hours-scale latency — legislated, not accidental",
+     "grade": "NEAR",
+     "jurisdiction": "Australia"
+    },
+    {
+     "fact": "Keyless real-time level + discharge (~2,100 stations) — but level/discharge only",
+     "grade": "GAPPED",
+     "jurisdiction": "Canada"
+    },
+    {
+     "fact": "World-class federal-waterway real-time; no national harmonisation — constitutional",
+     "grade": "GAPPED",
+     "jurisdiction": "Germany"
+    },
+    {
+     "fact": "Dense 10-minute river network — but portal-only; terms ban automated harvest",
+     "grade": "GAPPED",
+     "jurisdiction": "Japan"
+    },
+    {
+     "fact": "~22,000-station network behind a manual registration gate (3–7 days)",
+     "grade": "GAPPED",
+     "jurisdiction": "Brazil"
+    },
+    {
+     "fact": "~250+ gauges exist but publish as PDFs and app advisories — no machine API",
+     "grade": "THIN",
+     "jurisdiction": "Nigeria"
+    },
+    {
+     "fact": "Monthly FTP, not an API; 2,100+ stations stream real-time internally only",
+     "grade": "THIN",
+     "jurisdiction": "Mexico"
+    },
+    {
+     "fact": "Keyless 5-min hydrometry API over 4,200+ stations, discharge history to 1900",
+     "grade": "AT BENCHMARK",
+     "jurisdiction": "France"
+    },
+    {
+     "fact": "Keyless CC0 real-time water API — but only the national main-water system",
+     "grade": "NEAR",
+     "jurisdiction": "Netherlands"
+    },
+    {
+     "fact": "Dense real-time + 8,000 CCTV + AI flood platform; machine API behind an approval gate",
+     "grade": "NEAR",
+     "jurisdiction": "South Korea"
+    },
+    {
+     "fact": "Densest networks on Earth — public machine access closed by 2007 regulation",
+     "grade": "GAPPED",
+     "jurisdiction": "China"
+    },
+    {
+     "fact": "Century-deep archive; no machine API — station-by-station web CSV with query caps",
+     "grade": "GAPPED",
+     "jurisdiction": "South Africa"
+    },
+    {
+     "fact": "Canal levels still largely reported by telephone; the ministry publishes news, not data",
+     "grade": "THIN",
+     "jurisdiction": "Egypt"
+    },
+    {
+     "fact": "Keyless GraphQL, 253 stations, 10-min — \"the live feed is uncorrected, always 0\"",
+     "grade": "NEAR",
+     "jurisdiction": "Switzerland"
+    },
+    {
+     "fact": "USGS-class real-time + validated archive to 1911 — from nine separate basin websites",
+     "grade": "NEAR",
+     "jurisdiction": "Spain"
+    },
+    {
+     "fact": "40+ years of 15-min discharge, keyless CC-BY — chemistry behind a token gate",
+     "grade": "NEAR",
+     "jurisdiction": "Sweden"
+    },
+    {
+     "fact": "Keyless 5-min real-time feeds — on 16 independent council servers, no front door",
+     "grade": "NEAR",
+     "jurisdiction": "New Zealand"
+    },
+    {
+     "fact": "15-min national meteo-hydro database exists — behind operator login",
+     "grade": "GAPPED",
+     "jurisdiction": "Italy"
+    },
+    {
+     "fact": "458-station daily discharge + 70 years of lab quality on keyless CKAN — telemetry walled",
+     "grade": "GAPPED",
+     "jurisdiction": "Israel"
+    }
+   ],
+   "scope": "hydrological observation data",
+   "source": "Unity Framework · water-countries.html (v6-68)",
+   "state": "PILOT · RESEARCH — modeled analysis on public figures, not a live feed"
+  },
+  {
+   "benchmark": "GRID-RICH",
+   "counts": {
+    "AT BENCHMARK": 0,
+    "GAPPED": 3,
+    "NEAR": 6,
+    "THIN": 1
+   },
+   "headline": "What the grid data really looks like, country by country.",
+   "key": "energy",
+   "name": "Energy",
+   "researched": "2026-09-28",
+   "rows": [
+    {
+     "fact": "The domain reference — hourly balancing-authority survey + metered stack emissions; dented only by the mandatory free API key",
+     "grade": "NEAR",
+     "jurisdiction": "United States"
+    },
+    {
+     "fact": "Strong provincial operators, no national mandate; largest province's data all-rights-reserved",
+     "grade": "GAPPED",
+     "jurisdiction": "Canada"
+    },
+    {
+     "fact": "Three keyless official APIs, settlement-grain telemetry — 30-min legal grain, modeled-only carbon",
+     "grade": "NEAR",
+     "jurisdiction": "United Kingdom"
+    },
+    {
+     "fact": "Two keyless APIs, 15-min telemetry, CC BY 4.0 in the response body; ENTSO-E's EU layer gated by email approval",
+     "grade": "NEAR",
+     "jurisdiction": "Germany"
+    },
+    {
+     "fact": "Strongest keyless estate verified live — 15-min telemetry, 14.5 years history, Licence Ouverte 2.0; OAuth wall on the market tier",
+     "grade": "NEAR",
+     "jurisdiction": "France"
+    },
+    {
+     "fact": "Ten regional utilities with good noticeboards and no telegraph between them",
+     "grade": "GAPPED",
+     "jurisdiction": "Japan"
+    },
+    {
+     "fact": "5-min dispatch in keyless bulk files, deep archives; no queryable REST API, no metered emissions",
+     "grade": "NEAR",
+     "jurisdiction": "Australia"
+    },
+    {
+     "fact": "Monthly statistical releases, Chinese-primary, no public real-time or machine feed located",
+     "grade": "THIN",
+     "jurisdiction": "China"
+    },
+    {
+     "fact": "The data exists — near-real-time demand JSON served unprotected but undocumented",
+     "grade": "GAPPED",
+     "jurisdiction": "India"
+    },
+    {
+     "fact": "Most honestly open — keyless CC-BY API, hourly balances back to 2000, revisions disclosed in writing",
+     "grade": "NEAR",
+     "jurisdiction": "Brazil"
+    }
+   ],
+   "scope": "electricity-grid telemetry",
+   "source": "Unity Framework · energy-countries.html (v6-68)",
+   "state": "PILOT · RESEARCH — modeled analysis on public figures, not a live feed"
+  },
+  {
+   "benchmark": "CLIMATE-RICH",
+   "counts": {
+    "AT BENCHMARK": 1,
+    "GAPPED": 3,
+    "NEAR": 6,
+    "THIN": 0
+   },
+   "headline": "What the climate data really looks like, country by country.",
+   "key": "climate",
+   "name": "Climate",
+   "researched": "2026-09-28",
+   "rows": [
+    {
+     "fact": "The first AT BENCHMARK of the whole country-models program — continental CC0 hourly sensor-measured atmospheric estate plus a keyless per-table CSV inventory",
+     "grade": "AT BENCHMARK",
+     "jurisdiction": "United States"
+    },
+    {
+     "fact": "Keyless OGC-API climate estate back to 1840 — but the full inventory's machine path runs through a JS viewer, and only Alert ran continuously 2020–2022",
+     "grade": "NEAR",
+     "jurisdiction": "Canada"
+    },
+    {
+     "fact": "The only country with an operational national top-down verification programme (DECC towers + InTEM) — yet the Met Office's own API sits behind OAuth2 login",
+     "grade": "NEAR",
+     "jurisdiction": "United Kingdom"
+    },
+    {
+     "fact": "Strongest keyless estate in the program — DWD same-day files, no key, no rate limits, CC BY 4.0 — one unlocatable inventory licence line is all that blocks AT",
+     "grade": "NEAR",
+     "jurisdiction": "Germany"
+    },
+    {
+     "fact": "The open data moved house — legacy SYNOP URLs dead, the real estate keyless on object storage — but no homogenized century series, and the API needs a key",
+     "grade": "GAPPED",
+     "jurisdiction": "France"
+    },
+    {
+     "fact": "Full pipeline, keyless — CRT zips, homogenized 1898–2025 CSV fetched live, live XML feeds — but Japanese-only under the hood, and GOSAT needs registration",
+     "grade": "NEAR",
+     "jurisdiction": "Japan"
+    },
+    {
+     "fact": "World's fastest inventory cadence (quarterly, ~2-month preliminary — REPORTED, unverified this session) and Cape Grim's 1976→ record — but no BoM primary surface could be verified this session (bot-blocked)",
+     "grade": "NEAR",
+     "jurisdiction": "Australia"
+    },
+    {
+     "fact": "2021: 14.314 billion tonnes CO₂e excl. LULUCF (~3-year lag) — while CMA's 256-station GHG monitoring network releases no open data",
+     "grade": "GAPPED",
+     "jurisdiction": "China"
+    },
+    {
+     "fact": "Official weather data is a paid product with mandatory API keys — an independent civil-society inventory is more openly accessible than the government's machine data",
+     "grade": "GAPPED",
+     "jurisdiction": "India"
+    },
+    {
+     "fact": "Only one of its trio to file BTR-1 on time and in machine-readable CRT form — but SIRENE's standalone system is retired: the data exists, the API doesn't",
+     "grade": "NEAR",
+     "jurisdiction": "Brazil"
+    }
+   ],
+   "scope": "greenhouse-gas and atmospheric-observation data",
+   "source": "Unity Framework · climate-countries.html (v6-68)",
+   "state": "PILOT · RESEARCH — modeled analysis on public figures, not a live feed"
+  },
+  {
+   "benchmark": "seven-dimension food benchmark",
+   "counts": {
+    "AT BENCHMARK": 0,
+    "GAPPED": 1,
+    "NEAR": 9,
+    "THIN": 0
+   },
+   "headline": "What the food data really looks like, country by country.",
+   "key": "food",
+   "name": "Food",
+   "researched": "2026-09-28",
+   "rows": [
+    {
+     "fact": "The hypothesized benchmark — blocked by dimension 7: the NASS (National Agricultural Statistics Service) QuickStats REST API returns 401 without a key (OBSERVED)",
+     "grade": "NEAR",
+     "jurisdiction": "United States"
+    },
+    {
+     "fact": "12th levantamento XLSX from CONAB (Companhia Nacional de Abastecimento), downloadable the same month the season closed; price-collection methods resolved for both series",
+     "grade": "NEAR",
+     "jurisdiction": "Brazil"
+    },
+    {
+     "fact": "Eurostat Comext works keyless (monthly wheat exports pulled live); FranceAgriMer's own PDF admits French export data incomplete since Jan 2024",
+     "grade": "NEAR",
+     "jurisdiction": "France"
+    },
+    {
+     "fact": "Compact, open estate — quarterly XLSX, CC BY 4.0, zero login barriers — but the ABS (Australian Bureau of Statistics) grain-stocks survey was discontinued ~2012",
+     "grade": "NEAR",
+     "jurisdiction": "Australia"
+    },
+    {
+     "fact": "A stranger fetched a full StatCan table as CSV (132.5 KB zip, no login, OBSERVED); weekly satellite NDVI (Normalized Difference Vegetation Index) crop-condition maps for 1,607 census subdivisions since 1987",
+     "grade": "NEAR",
+     "jurisdiction": "Canada"
+    },
+    {
+     "fact": "The \"closed stocks\" hypothesis is REFUTED — FCI (Food Corporation of India) publishes monthly central-pool levels (wheat 48.0 MMT, rice 39.1 MMT — million metric tons, 1 Sept 2026)",
+     "grade": "NEAR",
+     "jurisdiction": "India"
+    },
+    {
+     "fact": "Zero published grain-reserve levels in physical units — the world's largest stockpile is modeled by foreigners because the owner won't say the number",
+     "grade": "NEAR",
+     "jurisdiction": "China"
+    },
+    {
+     "fact": "The daily prices the country trades on are set by two private exchanges — while the ministry's own production CSV endpoint 404s (OBSERVED ×2)",
+     "grade": "NEAR",
+     "jurisdiction": "Argentina"
+    },
+    {
+     "fact": "The war is in the data as documentation, not silence — monthly grain stocks (24.6 Mt at 2026-09-01), occupied oblasts marked к/с, martial-law revision footnotes",
+     "grade": "NEAR",
+     "jurisdiction": "Ukraine"
+    },
+    {
+     "fact": "The THIN-anchor hypothesis is REJECTED — Nigeria's NBS (National Bureau of Statistics) independently enumerates retail food prices monthly across all 774 local government areas (LGAs) with 700+ of its own staff",
+     "grade": "GAPPED",
+     "jurisdiction": "Nigeria"
+    }
+   ],
+   "scope": "food production, stocks, trade, price, nutrition and verification data",
+   "source": "Unity Framework · food-countries.html (v6-68)",
+   "state": "PILOT · RESEARCH — modeled analysis on public figures, not a live feed"
+  },
+  {
+   "benchmark": "seven-dimension pandemic benchmark",
+   "counts": {
+    "AT BENCHMARK": 0,
+    "GAPPED": 2,
+    "NEAR": 8,
+    "THIN": 0
+   },
+   "headline": "What the pandemic data really looks like, country by country.",
+   "key": "pandemic",
+   "name": "Pandemic",
+   "researched": "2026-09-28",
+   "rows": [
+    {
+     "fact": "The measurement leg survives — NWSS (National Wastewater Surveillance System) wastewater, 1,234 sites, ~144M people, anonymous machine-readable, public domain — while national case counting was structurally deleted",
+     "grade": "NEAR",
+     "jurisdiction": "United States"
+    },
+    {
+     "fact": "Killed its entire MEASURED layer (ONS (Office for National Statistics) infection survey final release 24 March 2023; COG-UK (COVID-19 Genomics UK Consortium) \"final flight\" March 2023) — yet the REPORTED machinery survives: open-licence dashboard API, mandatory weekly SARI (severe acute respiratory infection) Watch from all acute NHS (National Health Service) trusts",
+     "grade": "NEAR",
+     "jurisdiction": "United Kingdom"
+    },
+    {
+     "fact": "The most machine-readable estate of the slate, still alive in 2026: RKI open-data estate on GitHub/Zenodo/OpenCoDE under CC-BY-4.0, AMELAG (wastewater monitoring for epidemiological situation assessment) wastewater pushed 2026-09-23, the weekly ARE (acute respiratory illness) report still publishing",
+     "grade": "NEAR",
+     "jurisdiction": "Germany"
+    },
+    {
+     "fact": "On 1 July 2023 the legal basis for SI-DEP (Système d'Information de Dépistage Populationnel) personal test data expired, and France froze — rather than deleted — its entire emergency machine-readable estate, all still downloadable on data.gouv.fr with the freeze dated and explained",
+     "grade": "NEAR",
+     "jurisdiction": "France"
+    },
+    {
+     "fact": "The federation resolves cleanly (states feed NNDSS (National Notifiable Diseases Surveillance System); Commonwealth publishes via NINDSS (National Notifiable Disease Surveillance System) and the still-running Australian Respiratory Surveillance Report) — but the national case series is PDFs, not files",
+     "grade": "NEAR",
+     "jurisdiction": "Australia"
+    },
+    {
+     "fact": "Live right now: weekly SRAG (Síndrome Respiratória Aguda Grave — severe acute respiratory syndrome) banks updated September 2026, SI-PNI (National Immunization Program information system)/RNDS (National Health Data Network) vaccination microdata in 135 CSV parts (~272 GB); one structural sub-miss inside dim 3",
+     "grade": "NEAR",
+     "jurisdiction": "Brazil"
+    },
+    {
+     "fact": "CRS (Civil Registration System) 2021 shows 10.2 million registered deaths — a 26% jump over 2020, ~6.3× India's officially reported 335,004 COVID deaths that year; INSACOG (Indian SARS-CoV-2 Genomics Consortium) bulletins stopped 27 March 2023 and the hospital series never opened",
+     "grade": "GAPPED",
+     "jurisdiction": "India"
+    },
+    {
+     "fact": "The \"reported end of zero-COVID reporting\" was a thinning, not a blackout: a live weekly sentinel positivity series runs through September 2026 plus monthly national case/death tables (May 2026: 21,861 cases, 1 death); the vaccination ledger never opened",
+     "grade": "NEAR",
+     "jurisdiction": "China"
+    },
+    {
+     "fact": "Sequencing depth matched the reputation — NGS-SA (Network for Genomic Surveillance in South Africa) tracked 54,450 genomes, catching BA.2.87.1 — but the estate was wound down: daily case reporting ended 1 Aug 2022, DATCOV (the COVID-19 hospital surveillance system of the NICD — National Institute for Communicable Diseases) closed 31 Dec 2022",
+     "grade": "GAPPED",
+     "jurisdiction": "South Africa"
+    },
+    {
+     "fact": "Mortality accounting in one pair of numbers: 3,155 registered COVID deaths vs WHO's external MODELED estimate of ~186,000 excess deaths for 2020–2021 (~59×; windows differ — illustrative, not like-for-like); the single structural miss is the hospital series, never opened",
+     "grade": "NEAR",
+     "jurisdiction": "Nigeria"
+    }
+   ],
+   "scope": "case, genomic, hospital, mortality, vaccination and verification data",
+   "source": "Unity Framework · pandemic-countries.html (v6-68)",
+   "state": "PILOT · RESEARCH — modeled analysis on public figures, not a live feed"
+  }
+ ],
+ "sources": "Google Drive: unity-framework-20260929-v6-68.zip, rte-suite-20260928.zip, SIMA-DCLM RTE specs, ED-SPEC-20260904-DIVERTER-V1, DCLM-RTE-V2.0.4 manifest"
+}

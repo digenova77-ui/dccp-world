@@ -1,0 +1,30 @@
+# CodeRabbit configuration for the DCCP world build.
+# David's instruction: this is a 3D architecture — review it as one.
+
+reviews:
+  review_instructions: |
+    ARCHITECTURE NOTICE — READ BEFORE REVIEWING:
+    This repository is a 3D (layered) architecture, not a flat codebase.
+    Domain modules live under src/dccp/: world, cosmos, explorer, pipe,
+    rte, unity, engine, meter, live, ui, data, index. Cross-cutting
+    concerns span all of them: trinity (DCLM / Iris / Twain² verdict
+    discipline), truth (evidence grading: PROVEN / REPORTED / INFERRED /
+    UNKNOWN), ledger (hash-chained records), iris (containment gates).
+
+    Because you read diffs serially, you will be tempted to flag local
+    frictions that are actually settled global invariants. Before raising
+    any structural finding:
+    1. Check AGENTS.md and the *_DESIGN.md docs at the repo root — many
+       structural choices are sealed there and are not up for re-litigation.
+    2. A pattern repeated across layers (e.g. the trinity review shape, the
+       evidence labels) is the architecture, not a duplication smell.
+    3. Sealed: the template ships with auth OFF (see .grok/app-env.json,
+       VITE_AUTH_ENABLED=false). Do not "fix" this.
+
+    Prefer: genuine logic bugs, contradictions between a doc's claims and
+    the code, missing mechanisms, security issues. Deprioritize: style
+    nits, rewording suggestions, and any finding that dissolves once the
+    cross-layer invariant is understood. If a finding challenges a sealed
+    decision, say so explicitly instead of presenting it as a defect.
+  auto_review:
+    enabled: true
