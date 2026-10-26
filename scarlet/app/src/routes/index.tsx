@@ -36,6 +36,7 @@ function Gate({ word }: { word: 'SHUT' | 'HOLE' }) {
 
 function Hud({ grade }: { grade: Grade }) {
   const canvas = useRef<HTMLCanvasElement>(null)
+  const meter = useRef<HTMLParagraphElement>(null)
   const go = useRef<(index: number) => void>(() => {})
   const fix = useRef<{ lat: number; lon: number } | null>(null)
   const cities = useRef<City[]>([])
@@ -82,6 +83,8 @@ function Hud({ grade }: { grade: Grade }) {
         { enableHighAccuracy: true, maximumAge: 30000, timeout: 8000 },
       )
     }
+    const perf = new URLSearchParams(window.location.search).has('perf')
+    if (meter.current) meter.current.hidden = !perf
     void import('../dccp/scene').then((mod) => {
       if (stop || !canvas.current) return
       const world = mod.mount(canvas.current, {
@@ -92,6 +95,11 @@ function Hud({ grade }: { grade: Grade }) {
           setRung(next)
           setCard(cardAt(next, cities.current, lands.current, at?.lat ?? null, at?.lon ?? null, locale))
         },
+        onPerf: perf
+          ? (line) => {
+              if (meter.current) meter.current.textContent = line
+            }
+          : undefined,
       })
       release = world.release
       go.current = world.go
@@ -116,6 +124,7 @@ function Hud({ grade }: { grade: Grade }) {
   return (
     <main>
       <canvas ref={canvas} id="world" />
+      <p ref={meter} className="perf" hidden />
       <header>
         <svg viewBox="0 0 64 64" aria-hidden="true">
           <path d="M32 10 A22 22 0 0 1 32 54" />

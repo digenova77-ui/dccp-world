@@ -267,3 +267,16 @@ h1 {
 .seats li { color: var(--ink); }
 
 .hud .sub { margin-top: 0.55rem; font-size: 0.75rem; }
+
+.perf {
+  position: fixed;
+  z-index: 4;
+  left: max(0.75rem, env(safe-area-inset-left));
+  bottom: max(0.75rem, env(safe-area-inset-bottom));
+  margin: 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  pointer-events: none;
+}
