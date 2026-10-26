@@ -1,0 +1,9 @@
+{
+  "name": "dualiscapax",
+  "rings": [
+    { "name": "DCLM", "binds": "logic" },
+    { "name": "Iris", "binds": "truth" },
+    { "name": "Twain", "binds": "pragmatism" }
+  ],
+  "seed": "3cd9a384f295b12d0bd1c616d8b100438c065e9097ba732c207c1926eef9bf6d"
+}
