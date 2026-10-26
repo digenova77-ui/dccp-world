@@ -5,10 +5,11 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | bytes | sha256 | path |
 |---:|---|---|
 | 440 | `e8fe9467a98d995246518214368cb133d9dbce9180dddd7b39e5b7417b8eac4d` | `PERFORMANCE.md` |
-| 2567 | `016e5b25b2da8ccdc1afdae5c112d98f07931cf5c62e8adfee9611fd31d3a379` | `STATE.md` |
+| 3176 | `05fd62455bc718c21a03c0508cc17c5f6c5f499354be289cfb1bfd27ae6e7601` | `STATE.md` |
 | 831 | `eef0f51dcb8ef2a098be722b90a4d76697d875157c70f7aace7cab0304cb5902` | `TOKEN-REPORT.md` |
+| 76 | `62dea7bb1344fbbdca7057eea06791c27b1488f25203d25bcfd8035c44280151` | `app/.grok/app-env.json` |
 | 277203 | `c2b4583c7d804bdaf94049f5b9248d2782116b1d3e19009e6d0e0ddeb741afa9` | `app/package-lock.json` |
-| 3636 | `beeff971763a3eac387785a848f21d4872519531a6de55207f6681cf57a92871` | `app/package.json` |
+| 3450 | `f47a3c564906baeda25e9d560b16339b55f80a1506bd8608046c66e15c25010a` | `app/package.json` |
 | 255 | `0dc30d397204e60211e25e243d6fcb831b490b6d61c04075ac1ac9f83266a566` | `app/public/capability.json` |
 | 205 | `1bbe5d4af3917f502ff71d944adea0f68f3ce965e403374f13b79ec96ff11b78` | `app/public/llms.txt` |
 | 2438 | `60355858302b145c23e5fcac1f3a44063ab8d7da90ce3ff45e56fd1c137e4cc5` | `app/public/observe.html` |
@@ -23,6 +24,16 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 14536 | `d5d0bbdf278987525f060371cffd085d500acad599c463eebc303f255b7761f4` | `app/public/registry/sectors.json` |
 | 43808 | `4197974434ae573f0ae69e5ee9f1cb7a3a59174e8895ae04951a378e6194cf0b` | `app/public/registry/trinity-verdict.json` |
 | 1981 | `cf7d42a8fed4da1823011ec72174891af790b236007cce3fa2ca6f9d2a34b813` | `app/public/where.html` |
+| 1278 | `92962d2361a98413c0cef80b31266d49b063cf4ecf6421bb99f57f6eef4ed7b6` | `app/scripts/app-env-plugin.mjs` |
+| 6615 | `36331d0bc0664debb5068bd6869d3089dc41555b7770c9ccb577d8845958835c` | `app/scripts/grok-pwa-plugin.mjs` |
+| 3206 | `f4db33fcf35ef3f25fca05d1b42494b6f607c44a4d728ed3e989e65a3a1ea9d0` | `app/scripts/grok-pwa-shared.d.mts` |
+| 18225 | `99bf3caab5e4c2a30fe748a196cfa4074a9e039efec16f57c83efe325bcadd9e` | `app/scripts/grok-pwa-shared.mjs` |
+| 5658 | `5f8fe91f837db8d74d68db5e057948918bd9299e097700e0bd18f1cf5f94e586` | `app/scripts/install-page.html` |
+| 3181 | `e1a31c8046a099df37b4bcbcafa4f4f7d7d18b1f1f0dc6d79676d41c4be976be` | `app/scripts/migrate.mjs` |
+| 1525 | `9305d8cfe8cdad73671065d675c89d0f20075d18c756f9aba5043b72e7c19a0d` | `app/scripts/migration-plan.mjs` |
+| 4601 | `a846b68bd3645299c23eef965d9ef226df3a500d345d7576c23f7a2b2ff643c7` | `app/scripts/with-app-env.mjs` |
+| 3606 | `340f1fed44355a61fefdaf29a752c524ac029afb00bea3f40cc996cdb289d2f8` | `app/server/middleware/grok-pwa.ts` |
+| 262 | `74847f2b2bade154ac07dabb239c4718a745c095df530e78b8f1ef9f053edfa2` | `app/server/virtual-grok-og-identity.d.ts` |
 | 2771 | `11a3df7eaf0d917c278ebef5c971b9b30ee2d917196b0d121fb040d960204f77` | `app/src/dccp/concepts.ts` |
 | 1344 | `7a04d6a649ff5c80bd8a87b34e849d4faa82527383b9e008deebf4d3969d272e` | `app/src/dccp/handoff.test.ts` |
 | 2600 | `f4eb58b5f3180c072d992761fbabf6c28ff15d7bb97820b5fa56471e0b36c70d` | `app/src/dccp/handoff.ts` |
@@ -49,4 +60,4 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 7953 | `76ee14a045bba0b549e4c4ede18ad0078010af437281bcb1b650d94a4d1db756` | `hosted/routes-AkICurYE.js` |
 | 4466 | `f8011b6ddba03bbe89c7dfa8bc8e31757ba247227dc35b08e5b1c45c5cda0dbe` | `hosted/styles-CN44gXjP.css` |
 
-Count: 44. Bytes: 1345350.
+Count: 55. Bytes: 1394006.
