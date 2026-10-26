@@ -6,6 +6,8 @@ Hosted `assets/index-BZqyS948.js` sha256 `ac02eb7d026c6b1c2169e0c59283d52574335d
 
 The source `vite.config.ts` imports was missing from the merged tree. This commit adds `scripts/grok-pwa-plugin.mjs`, `scripts/grok-pwa-shared.mjs`, `scripts/app-env-plugin.mjs`, `scripts/with-app-env.mjs`, `scripts/install-page.html`, and `server/middleware/grok-pwa.ts`. The hosted bundle hash is unchanged.
 
+A rebuild of this source on 2026-10-26 produced `index-DehHla5A.js` sha256 `4c2f96521e14a966cd3ee10f87cfe045357769c8da5e9af912ff01aa86e9ba5d`. It does not match `ac02eb7d` because the house hexes were corrected. `npm run build` calls `scripts/migrate.mjs`; with no `DATABASE_URL` that step skips.
+
 `purity_status.ts` was not edited.
 
 a. This is the scarlet HUD: the instrument a person stands in, opening at LOCAL. It answers the 2026-10-25 HUD brief and the DCCP/2 gate in the 3D-world compatibility brief.
