@@ -1,0 +1,216 @@
+/** One world. Ten magnitudes. Home is the bottom rung. */
+
+export const RUNGS = [
+  'LOCAL',
+  'MUNICIPAL',
+  'REGIONAL',
+  'PROVINCIAL',
+  'NATIONAL',
+  'INTERNATIONAL',
+  'PLANETARY',
+  'SOLAR',
+  'GALACTIC',
+  'COSMIC',
+] as const
+
+export type Rung = (typeof RUNGS)[number]
+
+/** Eye height in meters. The camera travels this curve. It does not swap scenes. */
+export const RUNG_HEIGHT_M = [
+  1.7, 1.2e3, 2.5e4, 2.0e5, 1.6e6, 6.0e6, 2.4e7, 2.0e11, 5.0e20, 1.0e26,
+] as const
+
+/** Two teal cores, one purple shell. No wordmark. Ratios, not pixels. */
+export const IRIS = {
+  shell: 1,
+  core: 0.42,
+  gap: 0.36,
+  shellOpacity: 0.28,
+} as const
+
+export function irisHolds(): boolean {
+  const center = IRIS.gap / 2
+  const inside = center + IRIS.core < IRIS.shell
+  const readable = IRIS.core / IRIS.shell >= 0.38
+  const shellClear = IRIS.shellOpacity >= 0.12 && IRIS.shellOpacity <= 0.35
+  return inside && readable && shellClear
+}
+
+export function rungIndex(heightM: number): number {
+  const log = Math.log(heightM)
+  let best = 0
+  let bestD = Infinity
+  for (let i = 0; i < RUNG_HEIGHT_M.length; i++) {
+    const d = Math.abs(log - Math.log(RUNG_HEIGHT_M[i]))
+    if (d < bestD) {
+      bestD = d
+      best = i
+    }
+  }
+  return best
+}
+
+export type City = { name: string; region: string; lat: number; lon: number; pop: number }
+export type Land = { name: string; continent: string; pop: number; rings: number[][] }
+
+export type ViewCard = {
+  rung: Rung
+  title: string
+  figure: string | null
+  raw: string | null
+  grade: 'REPORTED' | null
+  note: string
+}
+
+const MUNICIPAL_KM = 40
+const PROVINCE_KM = 120
+
+function radians(n: number): number {
+  return (n * Math.PI) / 180
+}
+
+export function kmBetween(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const dLat = radians(lat2 - lat1)
+  const dLon = radians(lon2 - lon1)
+  const a =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(radians(lat1)) * Math.cos(radians(lat2)) * Math.sin(dLon / 2) ** 2
+  return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
+export function nearestCity(cities: readonly City[], lat: number, lon: number, withinKm: number): City | null {
+  let best: City | null = null
+  let bestKm = withinKm
+  for (const city of cities) {
+    const km = kmBetween(lat, lon, city.lat, city.lon)
+    if (km <= bestKm) {
+      best = city
+      bestKm = km
+    }
+  }
+  return best
+}
+
+function ringHolds(ring: number[], lon: number, lat: number): boolean {
+  let crossings = 0
+  const count = Math.floor(ring.length / 2)
+  for (let i = 0; i < count; i++) {
+    const x1 = ring[i * 2]
+    const y1 = ring[i * 2 + 1]
+    const x2 = ring[((i + 1) % count) * 2]
+    const y2 = ring[((i + 1) % count) * 2 + 1]
+    if ((y1 > lat) !== (y2 > lat) && lon < ((x2 - x1) * (lat - y1)) / (y2 - y1) + x1) crossings += 1
+  }
+  return crossings % 2 === 1
+}
+
+export function landAt(lands: readonly Land[], lat: number, lon: number): Land | null {
+  let found: Land | null = null
+  for (const land of lands) {
+    if (!land.rings.some((ring) => ringHolds(ring, lon, lat))) continue
+    if (found) return null
+    found = land
+  }
+  return found
+}
+
+function integerFigure(n: number, locale: string): { figure: string; raw: string } | null {
+  if (!Number.isInteger(n)) return null
+  const raw = new Intl.NumberFormat(locale).format(n)
+  if (Math.abs(n) >= 1_000_000_000) {
+    const billions = new Intl.NumberFormat(locale, { maximumFractionDigits: 2 }).format(n / 1_000_000_000)
+    return { figure: `${billions} billion`, raw }
+  }
+  return { figure: raw, raw }
+}
+
+export function cardFor(
+  rung: Rung,
+  hit: { city: City | null; land: Land | null },
+  locale: string,
+): ViewCard {
+  const empty = (note: string): ViewCard => ({
+    rung,
+    title: 'Empty',
+    figure: null,
+    raw: null,
+    grade: null,
+    note,
+  })
+  if (rung === 'LOCAL' || rung === 'REGIONAL' || rung === 'PLANETARY' || rung === 'SOLAR' || rung === 'GALACTIC' || rung === 'COSMIC') {
+    return empty('Nothing shipped at this magnitude.')
+  }
+  if (rung === 'MUNICIPAL') {
+    if (!hit.city) return empty('Nothing shipped at this magnitude.')
+    const shown = integerFigure(hit.city.pop, locale)
+    if (!shown) return empty('Nothing shipped at this magnitude.')
+    return {
+      rung,
+      title: hit.city.name,
+      figure: shown.figure,
+      raw: shown.raw,
+      grade: 'REPORTED',
+      note: 'Natural Earth. Not a census.',
+    }
+  }
+  if (rung === 'PROVINCIAL') {
+    if (!hit.city || hit.city.region.trim() === '') return empty('Nothing shipped at this magnitude.')
+    return {
+      rung,
+      title: hit.city.region,
+      figure: null,
+      raw: null,
+      grade: 'REPORTED',
+      note: 'Reported name. No count is shipped.',
+    }
+  }
+  if (rung === 'NATIONAL') {
+    if (!hit.land) return empty('Nothing shipped at this magnitude.')
+    const shown = integerFigure(hit.land.pop, locale)
+    if (!shown) return empty('Nothing shipped at this magnitude.')
+    return {
+      rung,
+      title: hit.land.name,
+      figure: shown.figure,
+      raw: shown.raw,
+      grade: 'REPORTED',
+      note: 'Natural Earth. Not a census.',
+    }
+  }
+  if (!hit.land || hit.land.continent.trim() === '') return empty('Nothing shipped at this magnitude.')
+  return {
+    rung,
+    title: hit.land.continent,
+    figure: null,
+    raw: null,
+    grade: 'REPORTED',
+    note: 'Name only. No count is shipped.',
+  }
+}
+
+export function viewFrom(
+  cities: readonly City[],
+  lands: readonly Land[],
+  lat: number,
+  lon: number,
+): { city: City | null; province: City | null; land: Land | null } {
+  return {
+    city: nearestCity(cities, lat, lon, MUNICIPAL_KM),
+    province: nearestCity(cities, lat, lon, PROVINCE_KM),
+    land: landAt(lands, lat, lon),
+  }
+}
+
+export function cardAt(
+  rung: Rung,
+  cities: readonly City[],
+  lands: readonly Land[],
+  lat: number | null,
+  lon: number | null,
+  locale: string,
+): ViewCard {
+  if (lat == null || lon == null) return cardFor(rung, { city: null, land: null }, locale)
+  const hit = viewFrom(cities, lands, lat, lon)
+  const city = rung === 'PROVINCIAL' ? hit.province : hit.city
+  return cardFor(rung, { city, land: hit.land }, locale)
+}
