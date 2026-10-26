@@ -50,6 +50,17 @@ export function rungIndex(heightM: number): number {
   return best
 }
 
+/** Log midpoint between neighbouring rungs. The label changes here and nowhere else. */
+export function rungCrossings(): number[] {
+  const out: number[] = []
+  for (let i = 0; i < RUNG_HEIGHT_M.length - 1; i++) {
+    const a = Math.log(RUNG_HEIGHT_M[i])
+    const b = Math.log(RUNG_HEIGHT_M[i + 1])
+    out.push(Math.exp((a + b) / 2))
+  }
+  return out
+}
+
 export type City = { name: string; region: string; lat: number; lon: number; pop: number }
 export type Land = { name: string; continent: string; pop: number; rings: number[][] }
 
@@ -139,6 +150,28 @@ function continentCount(lands: readonly Land[]): number {
   for (const land of lands) if (land.continent.trim() !== '') names.add(land.continent)
   return names.size
 }
+
+export function integerKm(km: number): number | null {
+  if (!Number.isFinite(km) || km < 0) return null
+  return Math.round(km)
+}
+
+export function nearestNeighbours(
+  cities: readonly City[],
+  city: City,
+  count: number,
+): { name: string; km: number }[] {
+  const rows: { name: string; km: number }[] = []
+  for (const other of cities) {
+    if (other.name === city.name && other.lat === city.lat && other.lon === city.lon) continue
+    const km = integerKm(kmBetween(city.lat, city.lon, other.lat, other.lon))
+    if (km == null) continue
+    rows.push({ name: other.name, km })
+  }
+  rows.sort((a, b) => a.km - b.km || a.name.localeCompare(b.name))
+  return rows.slice(0, count)
+}
+
 function integerFigure(n: number, locale: string): { figure: string; raw: string } | null {
   if (!Number.isInteger(n)) return null
   const raw = new Intl.NumberFormat(locale).format(n)
@@ -147,6 +180,39 @@ function integerFigure(n: number, locale: string): { figure: string; raw: string
     return { figure: `${billions} billion`, raw }
   }
   return { figure: raw, raw }
+}
+
+function localCard(rung: Rung, city: City | null, cities: readonly City[], locale: string): ViewCard {
+  const empty = {
+    rung,
+    title: 'Empty',
+    figure: null,
+    raw: null,
+    grade: null,
+    note: 'Nothing shipped at this magnitude.',
+  }
+  if (!city) return empty
+  const neighbours = nearestNeighbours(cities, city, 3)
+  if (neighbours.length === 0) {
+    return {
+      rung,
+      title: city.name,
+      figure: null,
+      raw: null,
+      grade: 'REPORTED',
+      note: 'Natural Earth. No neighbour record.',
+    }
+  }
+  const shown = integerFigure(neighbours[0].km, locale)
+  const list = neighbours.map((row) => `${row.name} ${row.km} km`).join(', ')
+  return {
+    rung,
+    title: city.name,
+    figure: shown?.figure ?? null,
+    raw: shown?.raw ?? null,
+    grade: 'REPORTED',
+    note: `Natural Earth. ${list}.`,
+  }
 }
 
 export function cardFor(
@@ -165,8 +231,11 @@ export function cardFor(
   })
   const none = 'Nothing shipped at this magnitude.'
   const book = 'Natural Earth. Record count. Not a population.'
-  if (rung === 'LOCAL' || rung === 'REGIONAL' || rung === 'SOLAR' || rung === 'GALACTIC' || rung === 'COSMIC') {
-    return empty(none)
+  if (rung === 'SOLAR' || rung === 'GALACTIC' || rung === 'COSMIC') return empty(none)
+  if (rung === 'LOCAL') return localCard(rung, hit.city, books.cities, locale)
+  if (rung === 'REGIONAL') {
+    if (!hit.city || hit.city.region.trim() === '') return empty(none)
+    return recordCard(rung, hit.city.region, citiesInRegion(books.cities, hit.city.region), locale, book)
   }
   if (rung === 'PLANETARY') return recordCard(rung, 'Countries', books.lands.length, locale, book)
   if (rung === 'MUNICIPAL') {

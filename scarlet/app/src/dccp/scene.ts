@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import { IRIS, RUNG_HEIGHT_M, rungIndex } from './ladder'
+import { createOpening } from './opening'
 import { TOKENS } from './tokens'
 
 function color(hex: string): number {
@@ -8,7 +9,7 @@ function color(hex: string): number {
 
 export function mount(
   canvas: HTMLCanvasElement,
-  hooks: { onRung: (index: number) => void },
+  hooks: { onRung: (index: number) => void; onPerf?: (line: string) => void },
 ): { release: () => void; go: (index: number) => void; frameMs: () => number | null } {
   const dpr = Math.min(window.devicePixelRatio || 1, 2)
   const dense = dpr > 1
@@ -56,6 +57,28 @@ export function mount(
   }
   helix.add(strand(TOKENS.edge, 0), strand(TOKENS.dclm, Math.PI))
   bead.dispose()
+  const barGeo = new THREE.CylinderGeometry(0.012, 0.012, 0.72, 5)
+  const barsFor = (hex: string, offset: number) => {
+    const mesh = new THREE.InstancedMesh(barGeo.clone(), new THREE.MeshBasicMaterial({ color: color(hex) }), 9)
+    const dummy = new THREE.Object3D()
+    const from = new THREE.Vector3()
+    const to = new THREE.Vector3()
+    for (let n = 0; n < 9; n++) {
+      const t = (offset + n * 2) / 17
+      const a = t * 3 * Math.PI * 2
+      const y = 0.2 + t * 2.2
+      from.set(Math.cos(a) * 0.42, y, Math.sin(a) * 0.42)
+      to.set(Math.cos(a + Math.PI) * 0.42, y, Math.sin(a + Math.PI) * 0.42)
+      dummy.position.copy(from).lerp(to, 0.5)
+      dummy.lookAt(to)
+      dummy.rotateX(Math.PI / 2)
+      dummy.updateMatrix()
+      mesh.setMatrixAt(n, dummy.matrix)
+    }
+    return mesh
+  }
+  helix.add(barsFor(TOKENS.gold, 0), barsFor(TOKENS.dclm, 1))
+  barGeo.dispose()
   const glow = new THREE.Mesh(
     new THREE.SphereGeometry(0.7, 16, 12),
     new THREE.MeshBasicMaterial({
@@ -137,7 +160,30 @@ export function mount(
   fit()
 
   const still = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  const reveal: { mat: THREE.MeshBasicMaterial; to: number }[] = []
+  scene.traverse((obj) => {
+    const mesh = obj as THREE.Mesh
+    const mat = mesh.material
+    if (!mat || Array.isArray(mat) || !(mat instanceof THREE.MeshBasicMaterial)) return
+    reveal.push({ mat, to: mat.opacity })
+    if (!still) {
+      mat.transparent = true
+      mat.opacity = 0
+    }
+  })
+  const opening = still ? null : createOpening(scene, camera)
+  let opened = opening == null
+  const finishOpening = () => {
+    if (opened) return
+    opened = true
+    opening?.skip()
+    for (const row of reveal) row.mat.opacity = row.to
+  }
   const samples: number[] = []
+  const windowed = hooks.onPerf ? new Float64Array(300) : null
+  let windowCount = 0
+  let windowCursor = 0
+  let windowSum = 0
   let last = performance.now()
   let raf = 0
   const frame = (now: number) => {
@@ -145,23 +191,46 @@ export function mount(
     const dt = now - last
     last = now
     if (dt > 0 && dt < 250 && samples.length < 90) samples.push(dt)
-    const step = still ? 1 : 0.08
-    logH += (target - logH) * step
-    const height = Math.exp(logH)
-    placeCamera(height)
-    const index = rungIndex(height)
-    if (index !== shown) {
-      shown = index
-      hooks.onRung(index)
+    if (!opened && opening) {
+      const t = opening.step(now)
+      for (const row of reveal) row.mat.opacity = row.to * t
+      if (t >= 1) opened = true
     }
-    if (!still) helix.rotation.y += 0.004
+    if (opened) {
+      const step = still ? 1 : 0.08
+      logH += (target - logH) * step
+      const height = Math.exp(logH)
+      placeCamera(height)
+      const index = rungIndex(height)
+      if (index !== shown) {
+        shown = index
+        hooks.onRung(index)
+      }
+      if (!still) helix.rotation.y += 0.004
+    }
     renderer.render(scene, camera)
+    if (windowed && dt > 0 && dt < 250) {
+      if (windowCount === 300) windowSum -= windowed[windowCursor]
+      else windowCount += 1
+      windowed[windowCursor] = dt
+      windowSum += dt
+      windowCursor = (windowCursor + 1) % 300
+      let worst = 0
+      for (let i = 0; i < windowCount; i++) if (windowed[i] > worst) worst = windowed[i]
+      hooks.onPerf?.(
+        `${Math.round(windowSum / windowCount)} ms avg · ${Math.round(worst)} ms worst · ${renderer.info.render.calls} draws · dpr ${renderer.getPixelRatio()}`,
+      )
+    }
   }
   raf = requestAnimationFrame(frame)
   window.addEventListener('resize', fit)
 
   const onWheel = (event: WheelEvent) => {
     event.preventDefault()
+    if (!opened) {
+      finishOpening()
+      return
+    }
     target = Math.min(logMax, Math.max(logMin, target + event.deltaY * 0.0015))
   }
   canvas.addEventListener('wheel', onWheel, { passive: false })
@@ -174,6 +243,10 @@ export function mount(
     return Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y)
   }
   const onPointerDown = (event: PointerEvent) => {
+    if (!opened) {
+      finishOpening()
+      return
+    }
     pointers.set(event.pointerId, { x: event.clientX, y: event.clientY })
     pinch = pinchDistance()
   }
@@ -194,6 +267,10 @@ export function mount(
   canvas.addEventListener('pointermove', onPointerMove)
   canvas.addEventListener('pointerup', onPointerUp)
   canvas.addEventListener('pointercancel', onPointerUp)
+  const onKey = () => {
+    if (!opened) finishOpening()
+  }
+  window.addEventListener('keydown', onKey)
 
   return {
     go: (index: number) => {
@@ -211,12 +288,14 @@ export function mount(
     },
     release: () => {
       cancelAnimationFrame(raf)
+      opening?.dispose()
       window.removeEventListener('resize', fit)
       canvas.removeEventListener('wheel', onWheel)
       canvas.removeEventListener('pointerdown', onPointerDown)
       canvas.removeEventListener('pointermove', onPointerMove)
       canvas.removeEventListener('pointerup', onPointerUp)
       canvas.removeEventListener('pointercancel', onPointerUp)
+      window.removeEventListener('keydown', onKey)
       scene.traverse((obj) => {
         const mesh = obj as THREE.Mesh
         mesh.geometry?.dispose()

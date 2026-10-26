@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
 import test from 'node:test'
-import { cardAt, irisHolds, landAt, nearestCity, rungIndex, RUNGS, type City, type Land } from './ladder.ts'
+import { cardAt, irisHolds, landAt, nearestCity, rungCrossings, rungIndex, RUNGS, RUNG_HEIGHT_M, type City, type Land } from './ladder.ts'
 import { TOKENS } from './tokens.ts'
 
 test('the house hexes are the locked set', () => {
@@ -19,6 +19,18 @@ test('the house hexes are the locked set', () => {
   for (const hex of Object.values(TOKENS)) assert.equal(css.includes(hex), true, hex)
   for (const miss of ['#05070e', '#f4efe4', '#e7c98a', '#4fe3d4', '#8a6cff', '#f1f5f9']) {
     assert.equal(css.includes(miss), false, miss)
+  }
+})
+
+test('a height maps to one rung', () => {
+  for (let i = 0; i < RUNG_HEIGHT_M.length; i++) assert.equal(rungIndex(RUNG_HEIGHT_M[i]), i)
+  const crossings = rungCrossings()
+  assert.equal(crossings.length, RUNGS.length - 1)
+  for (let i = 0; i < crossings.length; i++) {
+    const below = Math.exp(Math.log(crossings[i]) - 1e-6)
+    const above = Math.exp(Math.log(crossings[i]) + 1e-6)
+    assert.equal(rungIndex(below), i)
+    assert.equal(rungIndex(above), i + 1)
   }
 })
 
@@ -70,6 +82,16 @@ test('the shipped books place Toronto in Ontario and Canada', () => {
   assert.equal(province.note.includes('Natural Earth'), true)
   assert.notEqual(province.figure, null)
   assert.match(province.raw ?? '', /^[0-9,]+$/)
+  const local = cardAt('LOCAL', cities, lands, 43.65, -79.38, 'en-US')
+  assert.equal(local.title, 'Toronto')
+  assert.equal(local.grade, 'REPORTED')
+  assert.match(local.note, /Natural Earth/)
+  assert.match(local.raw ?? '', /^[0-9,]+$/)
+  assert.equal(JSON.stringify(local).includes('43.65'), false)
+  const regional = cardAt('REGIONAL', cities, lands, 43.65, -79.38, 'en-US')
+  assert.equal(regional.title, 'Ontario')
+  assert.equal(regional.grade, 'REPORTED')
+  assert.match(regional.raw ?? '', /^[0-9,]+$/)
   const nation = cardAt('NATIONAL', cities, lands, 43.65, -79.38, 'en-US')
   assert.equal(nation.title, 'Canada')
   assert.equal(nation.grade, 'REPORTED')
@@ -81,5 +103,8 @@ test('the shipped books place Toronto in Ontario and Canada', () => {
   assert.equal(closed.title, 'Cities')
   assert.equal(closed.grade, 'REPORTED')
   assert.equal(cardAt('LOCAL', cities, lands, null, null, 'en-US').title, 'Empty')
+  assert.equal(cardAt('REGIONAL', cities, lands, null, null, 'en-US').title, 'Empty')
   assert.equal(cardAt('SOLAR', cities, lands, null, null, 'en-US').title, 'Empty')
+  assert.equal(cardAt('GALACTIC', cities, lands, 43.65, -79.38, 'en-US').title, 'Empty')
+  assert.equal(cardAt('COSMIC', cities, lands, 43.65, -79.38, 'en-US').title, 'Empty')
 })
