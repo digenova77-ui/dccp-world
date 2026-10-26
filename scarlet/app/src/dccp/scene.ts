@@ -27,10 +27,47 @@ export function mount(
 
   const floor = new THREE.Mesh(
     new THREE.CircleGeometry(40, 48),
-    new THREE.MeshBasicMaterial({ color: color(TOKENS.gold) }),
+    new THREE.MeshBasicMaterial({ color: color(TOKENS.bg) }),
   )
   floor.rotation.x = -Math.PI / 2
   scene.add(floor)
+
+  const ring = new THREE.Mesh(
+    new THREE.TorusGeometry(1.15, 0.012, 8, 48),
+    new THREE.MeshBasicMaterial({ color: color(TOKENS.gold) }),
+  )
+  ring.rotation.x = Math.PI / 2
+  ring.position.y = 0.02
+  scene.add(ring)
+
+  const helix = new THREE.Group()
+  const bead = new THREE.SphereGeometry(0.055, 8, 6)
+  const strand = (hex: string, phase: number) => {
+    const mesh = new THREE.InstancedMesh(bead.clone(), new THREE.MeshBasicMaterial({ color: color(hex) }), 36)
+    const dummy = new THREE.Object3D()
+    for (let i = 0; i < 36; i++) {
+      const t = i / 35
+      const a = phase + t * 3 * Math.PI * 2
+      dummy.position.set(Math.cos(a) * 0.42, 0.2 + t * 2.2, Math.sin(a) * 0.42)
+      dummy.updateMatrix()
+      mesh.setMatrixAt(i, dummy.matrix)
+    }
+    return mesh
+  }
+  helix.add(strand(TOKENS.edge, 0), strand(TOKENS.dclm, Math.PI))
+  bead.dispose()
+  const glow = new THREE.Mesh(
+    new THREE.SphereGeometry(0.7, 16, 12),
+    new THREE.MeshBasicMaterial({
+      color: color(TOKENS.dclm),
+      transparent: true,
+      opacity: 0.08,
+      depthWrite: false,
+    }),
+  )
+  glow.position.y = 1.3
+  helix.add(glow)
+  scene.add(helix)
 
   const scale = 0.34
   const iris = new THREE.Group()
@@ -47,15 +84,30 @@ export function mount(
   const coreGeo = new THREE.SphereGeometry(IRIS.core * scale, 20, 14)
   const coreMat = () =>
     new THREE.MeshBasicMaterial({ color: color(TOKENS.edge), depthTest: false })
+  const glowGeo = new THREE.SphereGeometry(IRIS.core * scale * 1.65, 14, 10)
+  const glowMat = () =>
+    new THREE.MeshBasicMaterial({
+      color: color(TOKENS.edge),
+      transparent: true,
+      opacity: 0.22,
+      depthWrite: false,
+      depthTest: false,
+    })
   const left = new THREE.Mesh(coreGeo, coreMat())
   const right = new THREE.Mesh(coreGeo, coreMat())
+  const leftGlow = new THREE.Mesh(glowGeo, glowMat())
+  const rightGlow = new THREE.Mesh(glowGeo, glowMat())
   const half = (IRIS.gap / 2) * scale
   left.position.set(-half, 0, scale * 0.2)
   right.position.set(half, 0, scale * 0.2)
+  leftGlow.position.copy(left.position)
+  rightGlow.position.copy(right.position)
   shell.renderOrder = 2
-  left.renderOrder = 3
-  right.renderOrder = 3
-  iris.add(shell, left, right)
+  leftGlow.renderOrder = 3
+  rightGlow.renderOrder = 3
+  left.renderOrder = 4
+  right.renderOrder = 4
+  iris.add(shell, leftGlow, rightGlow, left, right)
   iris.position.set(-0.32, 0.02, -1.15)
   camera.add(iris)
 
@@ -102,6 +154,7 @@ export function mount(
       shown = index
       hooks.onRung(index)
     }
+    if (!still) helix.rotation.y += 0.004
     renderer.render(scene, camera)
   }
   raf = requestAnimationFrame(frame)
