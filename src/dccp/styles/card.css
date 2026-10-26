@@ -10,10 +10,9 @@
 .c-slab {
   position: relative; display: flex; flex-direction: column; max-height: inherit;
   border-radius: 22px; padding: 14px 16px 12px;
-  background: linear-gradient(160deg, rgba(14, 34, 46, 0.86), rgba(8, 16, 28, 0.9) 55%, rgba(24, 12, 40, 0.86));
+  background: linear-gradient(160deg, rgba(14, 34, 46, 0.93), rgba(8, 16, 28, 0.95) 55%, rgba(24, 12, 40, 0.93));
   border: 1px solid rgba(94, 234, 212, 0.38);
   box-shadow: 0 40px 90px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(168, 85, 247, 0.12) inset, 0 1px 0 rgba(255, 255, 255, 0.08) inset, 0 0 60px rgba(20, 184, 166, 0.12);
-  backdrop-filter: blur(14px) saturate(1.2);
   transform-style: preserve-3d;
   transform: rotateX(var(--rx)) rotateY(var(--ry));
   transition: transform 0.25s ease-out;
@@ -94,7 +93,7 @@ button.c-cell.go span::after { content: ' ›'; color: var(--teal); }
 .c-actions button:hover { filter: brightness(1.15); }
 
 /* Altitude ladder */
-.ladder { position: fixed; z-index: 2; left: max(12px, env(safe-area-inset-left)); top: max(14px, env(safe-area-inset-top)); display: grid; gap: 4px; padding: 10px 8px; border-radius: 18px; background: rgba(6, 14, 24, 0.55); border: 1px solid rgba(94, 234, 212, 0.18); backdrop-filter: blur(8px); pointer-events: auto; }
+.ladder { position: fixed; z-index: 2; left: max(12px, env(safe-area-inset-left)); top: max(14px, env(safe-area-inset-top)); display: grid; gap: 4px; padding: 10px 8px; border-radius: 18px; background: rgba(6, 14, 24, 0.7); border: 1px solid rgba(94, 234, 212, 0.18); pointer-events: auto; }
 .ladder[hidden] { display: none; }
 .l-rail { position: absolute; left: 21px; top: 22px; bottom: 22px; width: 2px; background: linear-gradient(180deg, #a855f7, #14b8a6 55%, #ffd166); opacity: 0.45; border-radius: 2px; }
 .ladder button { position: relative; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 4px 10px 4px 6px; border: 0; border-radius: 12px; background: transparent; cursor: pointer; text-align: left; color: var(--muted); }

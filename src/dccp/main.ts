@@ -82,7 +82,7 @@ function chooseQuality(): Q {
   if (forced === 'low' || forced === 'medium' || forced === 'high') return forced
   let q: Q = suggestQuality()
   try {
-    // Software rasterisers (SwiftShader, llvmpipe) and small GPUs cannot hold 4K textures + bloom; never let them crash the tab.
+    // Software rasterisers (SwiftShader, llvmpipe) and small GPUs cannot hold 4K textures; never let them crash the tab.
     const probe = document.createElement('canvas').getContext('webgl2') ?? document.createElement('canvas').getContext('webgl')
     if (!probe) return 'low'
     const info = probe.getExtension('WEBGL_debug_renderer_info')
@@ -1228,7 +1228,7 @@ function frame(): void {
   } catch (err) {
     if (frameErrors++ < 5) console.error('frame error (recovered)', err)
   }
-  // Twain² condition: drop bloom if the device cannot hold 30 fps once the world is up.
+  // Twain² condition: drop a quality tier if the device cannot hold 30 fps once the world is up.
   if (world && !perfChecked) {
     fpsFrames++
     fpsTime += dt
