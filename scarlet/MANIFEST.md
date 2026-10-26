@@ -4,9 +4,9 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 
 | bytes | sha256 | path |
 |---:|---|---|
-| 440 | `e8fe9467a98d995246518214368cb133d9dbce9180dddd7b39e5b7417b8eac4d` | `PERFORMANCE.md` |
-| 3176 | `05fd62455bc718c21a03c0508cc17c5f6c5f499354be289cfb1bfd27ae6e7601` | `STATE.md` |
-| 831 | `eef0f51dcb8ef2a098be722b90a4d76697d875157c70f7aace7cab0304cb5902` | `TOKEN-REPORT.md` |
+| 674 | `1a06f82b8a8a0615f87d07bf297e2fb21b6cb025d0d71dfe78e148278436a37e` | `PERFORMANCE.md` |
+| 2447 | `93fd158ef6289654f388412dae227f26314db9b09ecb8a18e06a5007959c7f26` | `STATE.md` |
+| 716 | `d9248449721eca945c60ea3fc04d2e84c180641f6d8afc91fd8a929e209b6028` | `TOKEN-REPORT.md` |
 | 76 | `62dea7bb1344fbbdca7057eea06791c27b1488f25203d25bcfd8035c44280151` | `app/.grok/app-env.json` |
 | 277203 | `c2b4583c7d804bdaf94049f5b9248d2782116b1d3e19009e6d0e0ddeb741afa9` | `app/package-lock.json` |
 | 3450 | `f47a3c564906baeda25e9d560b16339b55f80a1506bd8608046c66e15c25010a` | `app/package.json` |
@@ -37,10 +37,10 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 2771 | `11a3df7eaf0d917c278ebef5c971b9b30ee2d917196b0d121fb040d960204f77` | `app/src/dccp/concepts.ts` |
 | 1344 | `7a04d6a649ff5c80bd8a87b34e849d4faa82527383b9e008deebf4d3969d272e` | `app/src/dccp/handoff.test.ts` |
 | 2600 | `f4eb58b5f3180c072d992761fbabf6c28ff15d7bb97820b5fa56471e0b36c70d` | `app/src/dccp/handoff.ts` |
-| 2842 | `90a5ee6628487983d3015ad9e420e4a3b174350f87404a17c41b45ba54cba626` | `app/src/dccp/ladder.test.ts` |
-| 6156 | `7267c91f94805daad988be1f092277c187877516e0162958dbf94abc60080d6a` | `app/src/dccp/ladder.ts` |
+| 3419 | `347ad6290360da435cf0ae6fa2c222881d26ddf821ba8b1bdbc1cec1fe2c53be` | `app/src/dccp/ladder.test.ts` |
+| 7203 | `8c699a363efd863f466836e67957e1844cd235a9fce0249e38af0e02dcffd030` | `app/src/dccp/ladder.ts` |
 | 1387 | `90dda0a0f4f90643f050de875551330b00e745a0c28c8d23ac73ccc39f195577` | `app/src/dccp/rings.ts` |
-| 5861 | `2b6ef6c59cc3b70bc69719498ea5709e564cbec043cd7401bd77e300001bda4a` | `app/src/dccp/scene.ts` |
+| 7594 | `17a6389d7935fd61888920e589e15b193e0b770985bc42f3b347509e93b1853f` | `app/src/dccp/scene.ts` |
 | 10299 | `d058d5920731cb075167c850aaca840c5ab44992cd5b8bcd8bec537bc7b93485` | `app/src/dccp/site.ts` |
 | 250 | `6df3b4fe3a726c00cf03289e67da07742f5620b88faf455178272c7a4254cac3` | `app/src/dccp/tokens.ts` |
 | 53 | `fefc2dfb5982d6d5f5a506567a0b521a783efb0042978afea514f3f59cd3f927` | `app/src/lib/og/site.json` |
@@ -56,8 +56,12 @@ Every file in `scarlet/` except this file. Bytes and sha256.
 | 5610 | `2d7167a07a5ca79a0cd00008d0fe7a4a85ccca604d9387fcf3d8322847cc0357` | `app/src/styles.css` |
 | 753 | `17fa006ffb6aa67144e2801b0a262eef2a2ed30c0803548081bb38231f261477` | `app/tsconfig.json` |
 | 926 | `69bd9161fdafc74f4ee463b048f1351fab2b99b67a38c088e9fb25f996f98749` | `app/vite.config.ts` |
+| 341027 | `ed6a70f4eb20f06813953cdd6bcfe88342f1cc627d3f4d51681577a6c5a9ccc6` | `cut/index-CJYkHkhr.js` |
+| 8467 | `8a569e644a359029bf80241980352897ba45bdbacbf14c3bbfdcec48bbd81025` | `cut/routes-CO6X2p3w.js` |
+| 532082 | `99206489464a25ed068a6d288abcb47f7839ee41bc6cccd31aaae45ee0ed85f6` | `cut/scene-CeXVxukI.js` |
+| 4572 | `0300caaef50e123330de3bd8ad4f4ba9b12fba90a50c09e14fd873a6f58685fb` | `cut/styles-eWkUw5Ke.css` |
 | 340895 | `ac02eb7d026c6b1c2169e0c59283d52574335d6ddc958d25ead986f10fa88cc9` | `hosted/index-BZqyS948.js` |
 | 7953 | `76ee14a045bba0b549e4c4ede18ad0078010af437281bcb1b650d94a4d1db756` | `hosted/routes-AkICurYE.js` |
 | 4466 | `f8011b6ddba03bbe89c7dfa8bc8e31757ba247227dc35b08e5b1c45c5cda0dbe` | `hosted/styles-CN44gXjP.css` |
 
-Count: 55. Bytes: 1394006.
+Count: 59. Bytes: 2282901.

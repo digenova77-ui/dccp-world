@@ -1,20 +1,26 @@
 # STATE DECLARATION
 
-Base commit: `b7452f1d2d8348b872da4e83773c3c61e4381e8a` (`Restore governing README`).
+Base commit: `90d354a5775311c37e3ffc726bb260640e6a8896`.
 
-Hosted `assets/index-BZqyS948.js` sha256 `ac02eb7d026c6b1c2169e0c59283d52574335d6ddc958d25ead986f10fa88cc9` is preserved at `scarlet/hosted/` and matches the served file; this PR's source differs because the near-miss hexes were corrected to the locked set, so a rebuild will not hash to `ac02eb7d`.
+The new cut is `scarlet/cut/scene-CeXVxukI.js`, sha256 `99206489464a25ed068a6d288abcb47f7839ee41bc6cccd31aaae45ee0ed85f6`. It is the world canvas. The shell beside it is `index-CJYkHkhr.js`, sha256 `ed6a70f4eb20f06813953cdd6bcfe88342f1cc627d3f4d51681577a6c5a9ccc6`. A second build from this same source reproduced both hashes. The old hosted file `scarlet/hosted/index-BZqyS948.js` is untouched and still `ac02eb7d026c6b1c2169e0c59283d52574335d6ddc958d25ead986f10fa88cc9`.
 
-The source `vite.config.ts` imports was missing from the merged tree. This commit adds `scripts/grok-pwa-plugin.mjs`, `scripts/grok-pwa-shared.mjs`, `scripts/app-env-plugin.mjs`, `scripts/with-app-env.mjs`, `scripts/install-page.html`, and `server/middleware/grok-pwa.ts`. The hosted bundle hash is unchanged.
-
-A rebuild of this source on 2026-10-26 produced `index-DehHla5A.js` sha256 `4c2f96521e14a966cd3ee10f87cfe045357769c8da5e9af912ff01aa86e9ba5d`. It does not match `ac02eb7d` because the house hexes were corrected. `npm run build` calls `scripts/migrate.mjs`; with no `DATABASE_URL` that step skips.
+`src/dccp/handoff.ts` was not edited. Gate diff is zero.
 
 `purity_status.ts` was not edited.
 
-a. This is the scarlet HUD: the instrument a person stands in, opening at LOCAL. It answers the 2026-10-25 HUD brief and the DCCP/2 gate in the 3D-world compatibility brief.
-b. Home is LOCAL, at eye height, with the origin as the person. Geolocation is read only after an accepted handoff, kept in a component ref, and used only to choose a Natural Earth record. It is never written into a record, a receipt, a proof-object, the URL, or sessionStorage.
-c. Top to bottom: COSMIC, GALACTIC, SOLAR, PLANETARY, INTERNATIONAL, NATIONAL, PROVINCIAL, REGIONAL, MUNICIPAL, LOCAL.
-d. No sessionStorage key accepts the handoff. The bundle's sessionStorage keys are TanStack Router's `tsr-scroll-restoration-v1_3` and `tanstack_router_reload:<message>`. The gate reads the URL hash, else the query key `line`. The record is a `DCCP/2` line, dialect `dccp2-line-v1`. No handoff renders the word SHUT and draws no canvas.
-e. The seed `3cd9a384f295b12d0bd1c616d8b100438c065e9097ba732c207c1926eef9bf6d` is the 64-hex constant `rings.ts` requires before DCLM, Iris, and Twain are held. Derivation: UNKNOWN. Grade: UNKNOWN.
-f. House colors are defined only in `scarlet/app/src/dccp/tokens.ts`. The hosted bundle contains none of the locked hexes. The static pages used `#f4efe4` for `#f3efe6` and `#e7c98a` for `#e8c36a`, and the theme was `#05070e` for `#07080c`. Those are corrected in this source. The hosted bundle was not rewritten.
-g. `WHERE.md` is not on `digenova77-ui/dualiscapax-landing` main. The page claimed it was. That claim is corrected in `where.html`. CID `bafybeian5fkku2cu47iusk3iyt3piwbpms7ri4grkneqiyxtqlzoxag2uy` retrieval is HOLE. This page was not pinned.
-h. MUNICIPAL population is `public/registry/cities.json`, Natural Earth 1:50m populated places, a `pop_max` estimate, not a census, grade REPORTED. NATIONAL population is `public/registry/countries.json`, Natural Earth 1:50m Admin 0, grade REPORTED. PROVINCIAL shows that city record's region name and no count. INTERNATIONAL shows that country record's continent name and no count. LOCAL, REGIONAL, PLANETARY, SOLAR, GALACTIC, and COSMIC display no figure.
+Registry. `public/registry/cities.json` and `public/registry/countries.json` are the only books the rungs read. Figures are integers. The face says Natural Earth and REPORTED. A count is a count of records, not a population.
+
+- LOCAL: empty. No local record is shipped.
+- REGIONAL: empty. No regional aggregate is shipped.
+- MUNICIPAL: with a point, the nearest city inside 40 km and its `pop` integer. With no point, the count of city records.
+- PROVINCIAL: with a point, the city region name and the count of city records in that region. With no point, empty.
+- NATIONAL: with a point, the country the rings hold and its `pop` integer. With no point, the count of country records.
+- INTERNATIONAL: with a point, the continent name and the count of countries in it. With no point, the count of continent names.
+- PLANETARY: the count of country records. The book covers the planet. It is not a world population.
+- SOLAR, GALACTIC, COSMIC: empty. Nothing in the registry covers them.
+
+Geolocation is read only after the gate, kept in a component ref, and never written onto a card.
+
+Scene. Every rung draws Iris in front of the camera: two Edge-teal cores, each with one transparent larger shell, inside the Unity shell. The clear color is `#07080c`. The double helix stands at the origin: one Edge strand, one DCLM strand, one transparent DCLM sphere, and a gold ring on the floor. It is in frame from LOCAL through the heights that still look at the origin. At SOLAR and above the camera has left it; Iris remains. Base-pair bars were not built. There is no bloom and no backdrop blur.
+
+Tokens. All eight locked hexes are in the new cut. The near-misses `#05070e`, `#f4efe4`, `#e7c98a`, `#4fe3d4`, `#8a6cff`, and `#f1f5f9` are not. Research and eFuse are named in the token module and not painted.

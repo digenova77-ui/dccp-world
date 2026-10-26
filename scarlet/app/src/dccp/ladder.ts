@@ -114,6 +114,31 @@ export function landAt(lands: readonly Land[], lat: number, lon: number): Land |
   return found
 }
 
+function recordCard(rung: Rung, title: string, n: number, locale: string, note: string): ViewCard {
+  const shown = integerFigure(n, locale)
+  if (!shown || n < 1) {
+    return { rung, title: 'Empty', figure: null, raw: null, grade: null, note: 'Nothing shipped at this magnitude.' }
+  }
+  return { rung, title, figure: shown.figure, raw: shown.raw, grade: 'REPORTED', note }
+}
+
+function citiesInRegion(cities: readonly City[], region: string): number {
+  let n = 0
+  for (const city of cities) if (city.region === region) n += 1
+  return n
+}
+
+function landsInContinent(lands: readonly Land[], continent: string): number {
+  let n = 0
+  for (const land of lands) if (land.continent === continent) n += 1
+  return n
+}
+
+function continentCount(lands: readonly Land[]): number {
+  const names = new Set<string>()
+  for (const land of lands) if (land.continent.trim() !== '') names.add(land.continent)
+  return names.size
+}
 function integerFigure(n: number, locale: string): { figure: string; raw: string } | null {
   if (!Number.isInteger(n)) return null
   const raw = new Intl.NumberFormat(locale).format(n)
@@ -127,6 +152,7 @@ function integerFigure(n: number, locale: string): { figure: string; raw: string
 export function cardFor(
   rung: Rung,
   hit: { city: City | null; land: Land | null },
+  books: { cities: readonly City[]; lands: readonly Land[] },
   locale: string,
 ): ViewCard {
   const empty = (note: string): ViewCard => ({
@@ -137,13 +163,16 @@ export function cardFor(
     grade: null,
     note,
   })
-  if (rung === 'LOCAL' || rung === 'REGIONAL' || rung === 'PLANETARY' || rung === 'SOLAR' || rung === 'GALACTIC' || rung === 'COSMIC') {
-    return empty('Nothing shipped at this magnitude.')
+  const none = 'Nothing shipped at this magnitude.'
+  const book = 'Natural Earth. Record count. Not a population.'
+  if (rung === 'LOCAL' || rung === 'REGIONAL' || rung === 'SOLAR' || rung === 'GALACTIC' || rung === 'COSMIC') {
+    return empty(none)
   }
+  if (rung === 'PLANETARY') return recordCard(rung, 'Countries', books.lands.length, locale, book)
   if (rung === 'MUNICIPAL') {
-    if (!hit.city) return empty('Nothing shipped at this magnitude.')
+    if (!hit.city) return recordCard(rung, 'Cities', books.cities.length, locale, book)
     const shown = integerFigure(hit.city.pop, locale)
-    if (!shown) return empty('Nothing shipped at this magnitude.')
+    if (!shown) return empty(none)
     return {
       rung,
       title: hit.city.name,
@@ -154,20 +183,13 @@ export function cardFor(
     }
   }
   if (rung === 'PROVINCIAL') {
-    if (!hit.city || hit.city.region.trim() === '') return empty('Nothing shipped at this magnitude.')
-    return {
-      rung,
-      title: hit.city.region,
-      figure: null,
-      raw: null,
-      grade: 'REPORTED',
-      note: 'Reported name. No count is shipped.',
-    }
+    if (!hit.city || hit.city.region.trim() === '') return empty(none)
+    return recordCard(rung, hit.city.region, citiesInRegion(books.cities, hit.city.region), locale, book)
   }
   if (rung === 'NATIONAL') {
-    if (!hit.land) return empty('Nothing shipped at this magnitude.')
+    if (!hit.land) return recordCard(rung, 'Countries', books.lands.length, locale, book)
     const shown = integerFigure(hit.land.pop, locale)
-    if (!shown) return empty('Nothing shipped at this magnitude.')
+    if (!shown) return empty(none)
     return {
       rung,
       title: hit.land.name,
@@ -177,15 +199,10 @@ export function cardFor(
       note: 'Natural Earth. Not a census.',
     }
   }
-  if (!hit.land || hit.land.continent.trim() === '') return empty('Nothing shipped at this magnitude.')
-  return {
-    rung,
-    title: hit.land.continent,
-    figure: null,
-    raw: null,
-    grade: 'REPORTED',
-    note: 'Name only. No count is shipped.',
+  if (!hit.land || hit.land.continent.trim() === '') {
+    return recordCard(rung, 'Continents', continentCount(books.lands), locale, book)
   }
+  return recordCard(rung, hit.land.continent, landsInContinent(books.lands, hit.land.continent), locale, book)
 }
 
 export function viewFrom(
@@ -209,8 +226,8 @@ export function cardAt(
   lon: number | null,
   locale: string,
 ): ViewCard {
-  if (lat == null || lon == null) return cardFor(rung, { city: null, land: null }, locale)
+  if (lat == null || lon == null) return cardFor(rung, { city: null, land: null }, { cities, lands }, locale)
   const hit = viewFrom(cities, lands, lat, lon)
   const city = rung === 'PROVINCIAL' ? hit.province : hit.city
-  return cardFor(rung, { city, land: hit.land }, locale)
+  return cardFor(rung, { city, land: hit.land }, { cities, lands }, locale)
 }
