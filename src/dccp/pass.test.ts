@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { admits, pass } from './pass.ts'
+import { admits, hudFace, pass } from './pass.ts'
 
 const field = [
   { x: 0.9, y: 0.8, z: 0.2 },
@@ -32,3 +32,9 @@ test('a hole in the books hides the point', () => {
   assert.equal(pass(100, 40, 10, 'nope').ok, false)
   assert.equal(pass(100, 1.5, 0, field).ok, false)
 })
+
+test('the plate shows an unset book as unset and does not invent a free number', () => {
+  const bare = hudFace(null, null, null, null)
+  assert.deepEqual(bare, { books: 'unset', floor: 'unset', joined: false, settles: false, pay: 'not a coin' })
+})
+

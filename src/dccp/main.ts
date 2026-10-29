@@ -18,6 +18,7 @@ import { IRIS_TASK, taskHeld } from './iris/task'
 import { IrisVoice, recognitionSupported, synthesisSupported } from './iris/voice'
 import { IrisOrb } from './iris/orb'
 import { Overlay, type EntryMode, type Toggles } from './ui/overlay'
+import { hudFace } from './pass'
 import { Card, Ladder, type CardModel } from './ui/card'
 import { cardFor, cityCard, countryCard, type CardCtx } from './ui/cards'
 import { TIERS, inCountry, toLatLon, tierInfo, type Tier } from './world/geo'
@@ -335,7 +336,8 @@ function paintScale(): void {
   if (botSeat()) readings.push({ scope: 'This seat', label: 'Swarm', value: swarm.deployed ? `${swarm.workers} working` : null })
   const lines = unifiedTelemetry(band, readings).lines
   const satisfied = new Set(readings.filter(reading => reading.value !== null).map(reading => reading.label))
-  overlay.setScaleBand(band.title, [...lines, chain(satisfied).hud])
+  const face = hudFace(null, null, null, null)
+  overlay.setScaleBand(band.title, [`Books · ${face.books}. Does not settle.`, `Floor · ${face.floor}. Not a payment.`, ...lines, chain(satisfied).hud])
   overlay.setConnectors(world.tier === 'cosmic' ? cosmicLines(connectors()) : connectorLines({ countries: world.geo.countries.length, cities: world.geo.cities.length }))
 }
 

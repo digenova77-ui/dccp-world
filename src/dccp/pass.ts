@@ -111,3 +111,25 @@ export function pass(cap: number | null, emitted: number | null, reserve: number
     settles: false,
   }
 }
+
+export type HudFace = {
+  books: string
+  floor: string
+  joined: boolean
+  settles: false
+  pay: 'not a coin'
+}
+
+/** What the plate may show. An unset book is not a free number. A point is not a payment. */
+export function hudFace(cap: number | null, emitted: number | null, reserve: number | null, candidates: unknown): HudFace {
+  const books = freeAuthority(cap, emitted, reserve)
+  const span = sharedFloor(candidates)
+  const point = span?.chosen
+  return {
+    books: books.ok ? `${books.value} free` : books.reason === 'UNSET' ? 'unset' : 'hole',
+    floor: span == null ? 'unset' : point && span.closes != null ? `${span.closes} · ${point.x} ${point.y} ${point.z}` : 'nobody',
+    joined: books.ok && point != null,
+    settles: false,
+    pay: 'not a coin',
+  }
+}
