@@ -48,6 +48,7 @@ export class Overlay {
   constructor(host: HTMLElement, private toggles: Toggles, speechAvailable: boolean) {
     this.root = host
     host.innerHTML = `
+      <p class="pass-frame" hidden></p>
       <div class="gate is-loading" role="dialog" aria-modal="true" aria-labelledby="gate-title">
         <div class="gate-card">
           <h1 id="gate-title">DCCP World</h1>
@@ -321,6 +322,14 @@ export class Overlay {
   setTotality(line: string): void {
     const el = this.root.querySelector('.totality')
     if (el) el.textContent = line
+  }
+
+
+  setPassFrame(lines: readonly string[]): void {
+    const el = this.root.querySelector<HTMLElement>('.pass-frame')
+    if (!el) return
+    el.hidden = lines.length === 0
+    el.textContent = lines.join(' ')
   }
 
   setScaleBand(title: string, lines: string[]): void {

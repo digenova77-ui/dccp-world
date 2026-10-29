@@ -133,3 +133,13 @@ export function hudFace(cap: number | null, emitted: number | null, reserve: num
     pay: 'not a coin',
   }
 }
+
+/** The three lines that stay in the frame. They are not a balance. */
+export function frameLines(cap: number | null, emitted: number | null, reserve: number | null, candidates: unknown): readonly [string, string, string] {
+  const face = hudFace(cap, emitted, reserve, candidates)
+  return [
+    `Books · ${face.books}. Does not settle.`,
+    `Floor · ${face.floor}. Not a payment.`,
+    `Joined · ${face.joined ? 'not a payment' : 'no'}.`,
+  ]
+}
