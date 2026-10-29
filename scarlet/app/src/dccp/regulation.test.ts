@@ -44,3 +44,23 @@ test('winter at rest ignores an unset floor, and a moving winter does not invent
   const deep = winterThrottle(1_000_000, 200_000)
   assert.equal(deep.ok && deep.value, 200_000)
 })
+
+test('a passing check keeps the books and does not settle', () => {
+  const free = freeAuthority(100, 40, 10)
+  assert.equal(free.ok, true)
+  if (free.ok) {
+    assert.equal(free.value + 40 + 10, 100)
+    assert.equal(free.settles, false)
+    assert.equal(free.grade, 'PROPOSED')
+    assert.equal(free.scope, 'SANDBOX')
+  }
+  const paid = admitDisburse(100, 40, 10, 1)
+  assert.equal(paid.ok && paid.settles, false)
+  const released = releaseRoom(50, 10, 20, 5)
+  assert.equal(released.ok && released.value, 5)
+  assert.equal(released.ok && released.settles, false)
+  const winter = winterThrottle(0, null)
+  assert.equal(winter.ok && winter.settles, false)
+  assert.equal(freeAuthority(100, 1.5, 0).ok, false)
+  assert.equal(admitDisburse(100, 0, 0, 0).ok, false)
+})
