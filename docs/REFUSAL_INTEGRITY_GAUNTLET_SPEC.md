@@ -343,3 +343,32 @@ This specification does not:
 - claim that the entity has already demonstrated self-refusal.
 
 **Current status remains:** proposal for examination. Specification first. Tests next. Repairs only after honest baseline evidence.
+
+
+## 12. Baseline test-harness coverage audit (additional repository finding)
+
+A recursive Git tree inspection of the recorded `main` baseline returned 766 entries (tree response not truncated), including **102 TypeScript test files under `src/dccp/`**. The root `package.json` test script explicitly invokes only four of those DCCP test files:
+
+- `src/dccp/explorer/pyramid.test.ts`
+- `src/dccp/pipe/arbitrage.test.ts`
+- `src/dccp/regulation.test.ts`
+- `src/dccp/pass.test.ts`
+
+Therefore **98 of the 102 DCCP test files are not included in the root `npm test` command as currently declared**. This includes the inspected `src/dccp/iris/gates.test.ts`, `src/dccp/pipe/plusone.test.ts`, `src/dccp/pipe/fatherBind.test.ts`, all six `src/dccp/trinity/*test.ts` files, and `src/dccp/unity/sonvote.test.ts`.
+
+The script does run nine `scripts/**/*.test.mjs` tests, but the standalone Playwright QA scripts `scripts/gates-qa.mjs` and `scripts/daemon-qa.mjs` are not named in the root `test` script. They require a separately served preview and browser harness. They must not be described as part of the ordinary `npm test` run without evidence of another caller.
+
+The repository README describes `npm test` as the “full test suite”; that description is broader than the command's explicit DCCP test list. This is a documentation/coverage-contract discrepancy, not evidence that the omitted tests fail.
+
+A recursive tree inspection of `main` found no `.github/workflows/` files. This means no GitHub Actions workflow definitions were present in that inspected tree; it does not establish that no external CI or platform checks exist.
+
+**Consequences for the Gauntlet:**
+
+1. Record the exact test command and discovered test inventory in every baseline report.
+2. Do not call `npm test` a full DCCP regression run unless its selection is expanded and verified.
+3. Before expanding the default test command, determine whether omitted tests are intentionally excluded, incompatible with the current Node runner, or dependent on environment-specific fixtures. Do not simply add all 98 files and hide failures.
+4. Establish separate named commands for hermetic unit tests, browser/E2E QA, and environment-dependent integration tests.
+5. Add a test-selection audit that fails when a new `src/dccp/**/*.test.ts` file is not assigned to an explicit test lane.
+6. Preserve the original command's baseline output before changing test selection.
+
+**Evidence boundary:** this is a source/tree-level audit of `main`, not a local execution of `npm test`, not a CI run, and not a claim that any omitted test passes or fails.
