@@ -372,3 +372,77 @@ A recursive tree inspection of `main` found no `.github/workflows/` files. This 
 6. Preserve the original command's baseline output before changing test selection.
 
 **Evidence boundary:** this is a source/tree-level audit of `main`, not a local execution of `npm test`, not a CI run, and not a claim that any omitted test passes or fails.
+
+
+## 13. Execution-boundary audit — additional attack surfaces
+
+This pass inspected the production pipe sources and their adjacent tests on `main` at `4bb3ba21866ecd2d97057e0e865452db09b8feaf`. These are source-level findings; no local runtime test was executed.
+
+### 13.1 The transport's `COMMITTED` label is not a verified protocol receipt
+
+In `src/dccp/pipe/connector.ts`:
+
+- `transmitBoxToDCLM()` parses JSON and treats any object with `accepted === true` as `COMMITTED`.
+- It returns a newly constructed `receipt: { accepted: true }`, not the full kernel response or a signed, operation-bound receipt.
+- It does not check `response.ok` or the HTTP status before accepting `accepted === true`.
+- `transmitJsonToDCLM()` likewise returns `COMMITTED` when the JSON payload says `accepted === true`, without checking `response.ok`.
+
+In `src/dccp/pipe/daemon.ts`, the wallet-bind path passes that wrapper object and a caller-set `kernelAnswered: true` to `gateSettle('DELIVERED', ...)`. The father-bind path is materially stronger: `deliverFatherBind()` checks the manifest binding and verifies the Ed25519 countersignature against the pinned public key before returning `SEALED`.
+
+**Interpretation:** transport acceptance, daemon delivery state, a signed bind receipt, and protocol ratification are different claims. The Gauntlet must not let `COMMITTED` or `DELIVERED` be read as proof of a signed or independently ratified act.
+
+**New required tests:**
+- `RIG-015` — non-success HTTP status with `accepted: true` must not silently become a successful commit unless the protocol explicitly defines and verifies that status/body combination.
+- `RIG-016` — accepted response with missing, malformed, mismatched, or unverified operation-bound receipt must not be upgraded to a verified receipt or sealed state.
+
+### 13.2 Settle gate checks presence, not receipt authenticity
+
+`gateSettle('DELIVERED', evidence)` checks only that `receipt` is non-null and `kernelAnswered === true`. It does not inspect receipt schema, signature, manifest/operation binding, provenance, or verifier identity. Those properties may be established by a caller before invoking the gate, but the gate itself cannot prove them.
+
+The test contract must therefore distinguish:
+- evidence that a response arrived;
+- evidence that the response is structurally valid;
+- evidence that the response is bound to the exact operation;
+- evidence that its signature/provenance is independently verified;
+- evidence that the protected effect actually occurred, if that is what DELIVERED claims.
+
+### 13.3 Enqueue idempotency is sequentially tested, not yet concurrency-proven
+
+`gateEnqueue()` checks only that `manifest_hash` is a non-empty string. `CarryDaemon.enqueue()` performs a read (`store.get`), then later a write (`store.put`), with no transaction or lock spanning the check-and-insert in the inspected implementation.
+
+The existing `daemon.test.ts` test calls `enqueue()` twice sequentially with the same hash. It does not exercise concurrent calls, two daemon instances sharing a store, or competing tabs/processes.
+
+This does not prove a race has occurred. It does mean the current sequential test does not establish atomic idempotency under concurrent callers.
+
+**New required tests:**
+- `RIG-017` — concurrent same-hash enqueue against one store;
+- `RIG-018` — same-hash enqueue from separate daemon instances sharing a durable store;
+- `RIG-019` — concurrent pump/worker attempts and duplicate external effect suppression.
+
+### 13.4 Existing E2E checks do not yet constitute the Refusal Integrity Gauntlet
+
+The inspected `scripts/gates-qa.mjs` injects a password field and fake `SEALED` DOM claim, then verifies the audit panel catches them. This is a useful surface-integrity test; it does not attempt to continue a refused operation through the execution boundary.
+
+The inspected `scripts/daemon-qa.mjs` tests mocked kernel reachability, queueing, successful bind delivery, duplicate suppression after reload, and wrong-key rejection. It does not test a refused operation being deliberately retried through every mutation path, nor does it independently verify that no protected side effect occurred after refusal.
+
+The adjacent `fatherBind.test.ts` exercises cryptographic handshake outcomes and single-use manifest behaviour. It is not a test of the unified entity refusing its own proposed act.
+
+### 13.5 +1 wiring remains unproven in the inspected pipe call graph
+
+A scan of the nine production TypeScript modules directly under `src/dccp/pipe/` found the `ratify()` definition in `plusone.ts`, but no invocation from the other inspected production pipe modules. The source comment describes an intended ceremony/seal-path integration; the inspected `fatherBind.ts` flow instead performs its own signature check, Iris `sealOnlyWithAnswer` check, manifest consumption, and ledger append.
+
+This is a bounded finding, not a repository-wide proof that no other caller exists. A complete repository call-site audit remains required before any claim that +1 is wired into the actual execution path.
+
+## 14. Expanded Gauntlet register
+
+The original RIG-001 through RIG-014 remain unchanged. The following additional tests are proposed:
+
+| ID | Attack / property | Required refusal or proof |
+|---|---|---|
+| RIG-015 | Non-2xx HTTP response carrying `accepted: true` | No silent COMMITTED/DELIVERED upgrade without protocol-defined status validation |
+| RIG-016 | Accepted response with absent, malformed, mismatched, or unverified receipt | No receipt authenticity or sealing claim without independent verification |
+| RIG-017 | Concurrent same-hash enqueue on one store | Atomic idempotency; one effective queue item and no duplicate dispatch |
+| RIG-018 | Same-hash enqueue across daemon instances sharing durable storage | Cross-instance deduplication, not merely per-instance behaviour |
+| RIG-019 | Concurrent pump/worker execution | No duplicate protected effect under race or retry |
+
+These are proposed test additions to the specification. They have not been implemented or run. No RED or PASS result is claimed.
